@@ -16,6 +16,6 @@ async def get_episodes(episode: EpisodeCreateRequest):
     episodes = await episode_controller.get_episodes(episode.story_id, episode.age)
     if episodes:
         print(episode.story_id)
-        return { "result": "success", "stories": episodes}
+        return { "result": "success", "episodes": episodes}
     else:
         return { "result": "fail" }
