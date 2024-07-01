@@ -1,0 +1,178 @@
+{
+    "episodes": [
+      {
+        "episode": 1,
+        "title": "Lost in Tottori Prefecture Forest",
+        "description": "Hattori Heiji and Toyama Kazuha set out for the Takeda Mansion in Tottori Prefecture after receiving a mysterious invitation. They lose their way in the dense forest, run out of fuel for their motorcycle, and realize they have lost their phone. They decide to continue on foot, hoping to find a landmark or someone who can guide them."
+      },
+      {
+        "episode": 2,
+        "title": "Encounter Near Takeda Mansion",
+        "description": "Heiji, Kazuha, and Robert Taylor, an American photographer they met in the forest, meet Kogoro Mori, Edogawa Conan, and Ran Mori. They learn that they have all been invited to the mansion under different pretexts. They decide to stick together as they approach the mansion."
+      },
+      {
+        "episode": 3,
+        "title": "Dinner at Takeda Mansion",
+        "description": "After settling in at the mansion, the group gathers for dinner. The meal is tense due to the ominous atmosphere. Robert expresses his desire to visit the grave of Misa, a woman who cared for him three years ago. Ran and Kazuha accompany him to the grave site, where Robert reveals the deep sorrow he feels over Misa's death."
+      },
+      {
+        "episode": 4,
+        "title": "Discovery in the Warehouse",
+        "description": "The group finds Takeda Nobukazu's body hanging in the warehouse, staged to look like a spider's web. The discovery shocks everyone, deepening the mystery. Evidence suggests a well-planned crime: a blow to the back of the head, a rusty nail indicating recent use of the building, a locked-room scenario, and signs of a struggle.",
+        "evidence_collected": [
+          {
+            "type": "Blow to the back of the head",
+            "description": "indicating an attack from behind.",
+            "importance": 4
+          },
+          {
+            "type": "Rusty nail",
+            "description": "suggesting recent use of the otherwise unused building.",
+            "importance": 3
+          },
+          {
+            "type": "No exit except a small window",
+            "description": "pointing to a locked-room scenario.",
+            "importance": 5
+          },
+          {
+            "type": "Scattered flashlight and shoes",
+            "description": "implying a struggle.",
+            "importance": 3
+          },
+          {
+            "type": "Lack of dust",
+            "description": "indicating recent activity in the warehouse.",
+            "importance": 2
+          }
+        ]
+      },
+      {
+        "episode": 5,
+        "title": "Attack in the Shed",
+        "description": "Kazuha is attacked with a stun gun and loses consciousness while searching for her lost phone charm in the shed. Ran later finds Kazuha has disappeared, heightening the tension and fear among the group.",
+        "evidence_collected": [
+          {
+            "type": "BB pellet",
+            "description": "indicating the presence of a BB gun.",
+            "importance": 3
+          },
+          {
+            "type": "Stun gun",
+            "description": "used to knock out Kazuha, suggesting the assailant prepared for an attack.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 6,
+        "title": "Rescue Operation",
+        "description": "Heiji rescues Kazuha, who is found tied up with fishing line in the warehouse. The noose around her neck was a setup to make it appear as if she was about to be hanged. The detailed staging of the scene suggests the perpetrator's intention to confuse and mislead the investigators.",
+        "evidence_collected": [
+          {
+            "type": "Fishing line",
+            "description": "used to tie up Kazuha.",
+            "importance": 3
+          },
+          {
+            "type": "Noose",
+            "description": "a setup, indicating a staged scene.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 7,
+        "title": "Uncovering Nobukazu's Secrets",
+        "description": "Conan and Heiji discover that Nobukazu was involved in drug trafficking through his phone records, providing a possible motive for his murder. This new information links his criminal activities to the events at the mansion.",
+        "evidence_collected": [
+          {
+            "type": "Nobukazu's phone records",
+            "description": "showing involvement in drug trafficking.",
+            "importance": 5
+          }
+        ]
+      },
+      {
+        "episode": 8,
+        "title": "Confrontation with Robert Taylor",
+        "description": "Conan and Heiji identify the perpetrator as Robert Taylor, driven by vengeance for Misa's death. Robert's statements reveal his deep-seated anger and desire for revenge, confirming his guilt in orchestrating the murders of Nobukazu and Negishi.",
+        "evidence_collected": [
+          {
+            "type": "Incriminating statements",
+            "description": "made by Robert about Nobukazu's death.",
+            "importance": 5
+          }
+        ]
+      },
+      {
+        "episode": 9,
+        "title": "The Truth Behind Misa's Death",
+        "description": "The truth behind Misa's suicide is revealed: the twins misinterpreted Robert's message, leading to Misa's death. Misa's biological father is actually Ryuji, and family conflicts and Nobukazu's abuse played significant roles in her demise.",
+        "evidence_collected": [
+          {
+            "type": "Twins' testimony",
+            "description": "revealing the misinterpreted message.",
+            "importance": 5
+          },
+          {
+            "type": "Family records",
+            "description": "confirming Ryuji as Misa's biological father.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 10,
+        "title": "The Locked Room Murder Explained",
+        "description": "The perpetrator meticulously planned Takeda Nobukazu’s murder using a marionette mechanism. Ropes were attached within the warehouse creating a web-like structure. Nobukazu was lured into position where remote activation strangled him using ropes rigged to break under strain leaving no direct evidence.",
+        "evidence_collected": [
+          {
+            "type": "BB pellets found around warehouse",
+            "importance": 3
+          },
+          {
+            "type": "Rusty nails indicating use of warehouse",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "episode": 11,
+        "title": "Attempted Murder Unveiled",
+        "description": "The attack on Kazuha was orchestrated using a stun gun followed by tying her up with fishing line mimicking earlier murder setup creating misleading scenario for investigators.",
+        "evidence_collected": [
+          {
+            "type": "BB pellets found in shed",
+            "importance": 3
+          },
+          {
+            "type": "Stun gun used on Kazuha",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 12,
+        "title": "Arresting Robert Taylor",
+        "description": "Robert Taylor is arrested after being confronted with overwhelming evidence including incriminating statements about Nobukazu’s death along with physical evidence linking him directly to crimes committed out of revenge for Misa’s tragic fate.",
+        "evidence_collected": [
+          {
+            "type": "Incriminating statements made by Robert about Nobukazu’s death",
+            "importance": 5
+          }
+        ]
+      }
+    ],
+    "culprit_details": {
+      "name": "Robert Taylor",
+      "age": 26,
+      "occupation": "Photographer",
+      "motive": "Revenge for Misa's death",
+      "crimes": [
+        "Murder of Takeda Nobukazu",
+        "Murder of Negishi Akio",
+        "Attempted murder of Toyama Kazuha"
+      ]
+    }
+}

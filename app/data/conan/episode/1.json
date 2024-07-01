@@ -1,0 +1,54 @@
+{
+    "episodes": [
+      {
+        "episode": 1,
+        "title": "Lost in the Forest",
+        "description": "Hattori Heiji and Toyama Kazuha received a mysterious invitation to visit the Takeda Mansion in Tottori Prefecture. They set off on their motorcycle but soon got lost in the dense forest. To make matters worse, they ran out of fuel and realized they had lost their phone! Deciding to continue on foot, they hoped to find a landmark or someone who could guide them."
+      },
+      {
+        "episode": 2,
+        "title": "Meeting New Friends",
+        "description": "While wandering through the forest, Heiji and Kazuha met Robert Taylor, an American photographer. Together, they stumbled upon Kogoro Mori, Edogawa Conan, and Ran Mori. It turned out that everyone had been invited to the mansion under different pretexts. They decided to stick together as they approached the mansion."
+      },
+      {
+        "episode": 3,
+        "title": "Dinner at the Mansion",
+        "description": "After settling into the mansion, the group gathered for dinner. The atmosphere was tense and mysterious. During dinner, Robert expressed his wish to visit the grave of Misa, a woman who had cared for him three years ago. Ran and Kazuha decided to accompany him to the grave site. At the grave, Robert shared his deep sorrow over Misa's death."
+      },
+      {
+        "episode": 4,
+        "title": "A Shocking Discovery",
+        "description": "The next day, while exploring the mansion grounds, the group found Takeda Nobukazu's body hanging in a warehouse, staged to look like a spider's web. This discovery shocked everyone and deepened the mystery.",
+        "evidence_collected": [
+          {
+            "type": "Blow to the back of the head",
+            "description": "indicating an attack from behind.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 5,
+        "title": "The Culprit Revealed",
+        "description": "Conan and Heiji worked together to solve the mystery. They discovered that Robert Taylor was driven by revenge for Misa's death. Robert confessed that he blamed Nobukazu for Misa's tragic fate and wanted justice.",
+        "evidence_collected": [
+          {
+            "type": "Incriminating statements",
+            "description": "made by Robert about Nobukazu's death.",
+            "importance": 5
+          }
+        ]
+      }
+    ],
+    "culprit_details": {
+      "name": "Robert Taylor",
+      "age": 26,
+      "occupation": "Photographer",
+      "motive": "Revenge for Misa's death",
+      "crimes": [
+        "Murder of Takeda Nobukazu",
+        "Murder of Negishi Akio",
+        "Attempted murder of Toyama Kazuha"
+      ]
+    }
+}
