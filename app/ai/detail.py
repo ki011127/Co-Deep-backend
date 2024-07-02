@@ -33,6 +33,7 @@ class Detail():
         else:
             ver = 4
         
+        ## Co-Deep-backend 에서 실행할 때는 아래의 경로를 사용
         file_path = "app/data/" + story + "/episode/" + str(ver) + ".json"
         absolute_path = os.path.normpath(os.path.abspath(file_path)).strip()
         print(f"Reading file: {absolute_path}")
