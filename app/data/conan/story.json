@@ -1,0 +1,149 @@
+{
+  "case_development": [
+    {
+        "incident": 1,
+        "location": "Tottori Prefecture Forest",
+        "description": "Hattori Heiji and Toyama Kazuha set out for the Takeda Mansion in Tottori Prefecture after receiving a mysterious invitation. They lose their way in the dense forest, run out of fuel for their motorcycle, and realize they have lost their phone. They decide to continue on foot, hoping to find a landmark or someone who can guide them.",
+        "evidence": []
+    },
+    {
+        "incident": 2,
+        "location": "Near Takeda Mansion",
+        "description": "Heiji, Kazuha, and Robert Taylor, an American photographer they met in the forest, meet Kogoro Mori, Edogawa Conan, and Ran Mori. They learn that they have all been invited to the mansion under different pretexts. They decide to stick together as they approach the mansion.",
+        "evidence": []
+    },
+    {
+        "incident": 3,
+        "location": "Takeda Mansion",
+        "description": "After settling in at the mansion, the group gathers for dinner. The meal is tense due to the ominous atmosphere. Robert expresses his desire to visit the grave of Misa, a woman who cared for him three years ago. Ran and Kazuha accompany him to the grave site, where Robert reveals the deep sorrow he feels over Misa's death.",
+        "evidence": []
+    },
+    {
+        "incident": 4,
+        "location": "Warehouse",
+        "description": "The group finds Takeda Nobukazu's body hanging in the warehouse, staged to look like a spider's web. The discovery shocks everyone, deepening the mystery. Evidence suggests a well-planned crime: a blow to the back of the head, a rusty nail indicating recent use of the building, a locked-room scenario, and signs of a struggle.",
+        "evidence": [
+            {"type": "Blow to the back of the head", "description": "indicating an attack from behind.", "importance": 4},
+            {"type": "Rusty nail", "description": "suggesting recent use of the otherwise unused building.", "importance": 3},
+            {"type": "No exit except a small window", "description": "pointing to a locked-room scenario.", "importance": 5},
+            {"type": "Scattered flashlight and shoes", "description": "implying a struggle.", "importance": 3},
+            {"type": "Lack of dust", "description": "indicating recent activity in the warehouse.", "importance": 2}
+        ]
+    },
+    {
+        "incident": 5,
+        "location": "Shed",
+        "description": "Kazuha is attacked with a stun gun and loses consciousness while searching for her lost phone charm in the shed. Ran later finds Kazuha has disappeared, heightening the tension and fear among the group.",
+        "evidence": [
+            {"type": "BB pellet", "description": "indicating the presence of a BB gun.", "importance": 3},
+            {"type": "Stun gun", "description": "used to knock out Kazuha, suggesting the assailant prepared for an attack.", "importance": 4}
+        ]
+    },
+    {
+        "incident": 6,
+        "location": "Warehouse",
+        "description": "Heiji rescues Kazuha, who is found tied up with fishing line in the warehouse. The noose around her neck was a setup to make it appear as if she was about to be hanged. The detailed staging of the scene suggests the perpetrator's intention to confuse and mislead the investigators.",
+        "evidence": [
+            {"type": "Fishing line", "description": "used to tie up Kazuha.", "importance": 3},
+            {"type": "Noose", "description": "a setup, indicating a staged scene.", "importance": 4}
+        ]
+    },
+    {
+        "incident": 7,
+        "location": "Takeda Mansion",
+        "description": "Conan and Heiji discover that Nobukazu was involved in drug trafficking through his phone records, providing a possible motive for his murder. This new information links his criminal activities to the events at the mansion.",
+        "evidence": [
+            {"type": "Nobukazu's phone records", "description": "showing involvement in drug trafficking.", "importance": 5}
+        ]
+    },
+    {
+        "incident": 8,
+        "location": "Takeda Mansion",
+        "description": "Conan and Heiji identify the perpetrator as Robert Taylor, driven by vengeance for Misa's death. Robert's statements reveal his deep-seated anger and desire for revenge, confirming his guilt in orchestrating the murders of Nobukazu and Negishi.",
+        "evidence": [
+            {"type": "Incriminating statements", "description": "made by Robert about Nobukazu's death.", "importance": 5}
+        ]
+    },
+    {
+        "incident": 9,
+        "location": "Warehouse",
+        "description": "The truth behind Misa's suicide is revealed: the twins misinterpreted Robert's message, leading to Misa's death. Misa's biological father is actually Ryuji, and family conflicts and Nobukazu's abuse played significant roles in her demise.",
+        "evidence": [
+            {"type": "Twins' testimony", "description": "revealing the misinterpreted message.", "importance": 5},
+            {"type": "Family records", "description": "confirming Ryuji as Misa's biological father.", "importance": 4}
+        ]
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Takeda Nobukazu",
+      "alibi": "None (deceased)",
+      "motive": "None (victim)",
+      "evidence": []
+    },
+    {
+      "name": "Takeda Ryuji",
+      "alibi": "Bathing (confirmed by wife)",
+      "motive": "Ryuji had a strong sense of family honor and was deeply ashamed of the secrets and scandals that plagued the Takeda household. The revelation that he was actually Misa's biological father added a personal layer of guilt and responsibility for the tragedies that unfolded. Ryuji's motive was to protect the remaining family members and uphold the family's reputation, despite the dark truths that had been uncovered.",
+      "evidence": []
+    },
+    {
+      "name": "Takeda Yuji",
+      "alibi": "None (with family)",
+      "motive": "Yuji, similar to his brother Ryuji, was motivated by a desire to maintain the family's honor and integrity. The series of tragic events, coupled with the potential for public scandal, pushed him to take drastic measures to protect what remained of the Takeda legacy. His actions were driven by a deep-seated need to preserve the family's dignity and prevent further disgrace.",
+      "evidence": []
+    },
+    {
+      "name": "Robert Taylor",
+      "alibi": "None (relationship with Misa)",
+      "motive": "Robert was driven by a powerful desire for revenge after learning about Misa's tragic fate. His deep emotional connection with Misa and the belief that her death was caused by Nobukazu's abusive behavior fueled his determination to seek justice. This vendetta consumed him, leading him to meticulously plan and execute his actions to ensure that those he held responsible for Misa's suffering would face the consequences.",
+      "evidence": [
+        {"type": "Incriminating statements", "description": "made by Robert about Nobukazu's death.", "importance": 5}
+      ]
+    },
+    {
+      "name": "Takeda Chie",
+      "alibi": "Praying in her room",
+      "motive": "Chie, as the matriarch of the Takeda family, felt a profound responsibility to uphold the family's traditions and honor. The weight of the family's secrets and the ensuing tragedies were a heavy burden on her conscience. Her motive was to maintain the family's legacy and protect its reputation, even if it meant enduring personal suffering and making difficult decisions.",
+      "evidence": []
+    },
+    {
+      "name": "Shiota Miyuki",
+      "alibi": "Searching with the group",
+      "motive": "Miyuki's primary concern was the well-being of the family she served. She was deeply loyal to the Takedas and wanted to see the end of the turmoil that had gripped the household. Her actions were motivated by a desire to see justice served and to restore peace and normalcy to the family environment.",
+      "evidence": []
+    }
+  ],
+  "crime_tricks": [
+    {
+      "crime": "Takeda Nobukazu's Locked Room Murder",
+      "method": "The perpetrator meticulously planned the murder of Takeda Nobukazu to create a seemingly impossible locked-room scenario. The key to the method involved a marionette mechanism, which was ingeniously used to strangle Nobukazu. The setup involved attaching ropes to strategic points within the warehouse, creating a web-like structure. Nobukazu was lured into a specific position where the mechanism could be activated remotely. By using a truck to apply tension to the ropes, the perpetrator was able to strangle Nobukazu and then suspend his body to mimic a spider's web. To add to the illusion of an impenetrable locked room, the ropes were rigged to break under the strain, leaving no direct evidence of their manipulation. The BB gun used to shoot pellets and distract Nobukazu during the setup was discarded in the nearby mountains to eliminate any trace of the device.",
+      "motive": "The motive for Nobukazu's murder stemmed from Robert Taylor's deep-seated desire for revenge. Robert had developed a close and affectionate relationship with Misa Takeda during his previous stay at the Takeda Mansion. Misa's untimely death, which Robert believed was a direct result of Nobukazu's abusive behavior and harsh treatment, fueled his anger and grief. He was determined to avenge Misa's death by punishing the person he held responsible. This intense emotional turmoil and sense of justice drove Robert to meticulously plan and execute Nobukazu's murder, ensuring that the punishment fit the perceived crime.",
+      "evidence": [
+        {"type": "Incriminating statements", "description": "made by Robert about Nobukazu's death.", "importance": 5},
+        {"type": "BB pellets", "description": "found around the warehouse.", "importance": 3},
+        {"type": "Rusty nails", "description": "indicating the use of the warehouse.", "importance": 2}
+      ]
+    },
+    {
+      "crime": "Toyama Kazuha's Attack",
+      "method": "The attack on Toyama Kazuha was carefully orchestrated to not only incapacitate her but also to create a misleading scenario for the investigators. The perpetrator, aware of Kazuha's search for her lost phone charm, saw an opportunity to isolate and attack her. Using a stun gun, the assailant approached Kazuha from behind, delivering a sudden and powerful shock that rendered her unconscious almost instantly. After ensuring that Kazuha was incapacitated, the perpetrator used fishing line to tie her up, creating a scene that mimicked the earlier murder setup. The noose around Kazuha's neck was positioned in such a way as to suggest an imminent hanging, although the true intent was to mislead and confuse the investigators. This careful staging was intended to make it appear as if Kazuha was about to become another victim of the 'spider's web,' thereby adding to the overall narrative of fear and supernatural intervention.",
+      "motive": "The motive behind Kazuha's attack was twofold. Firstly, the perpetrator needed to eliminate a potential witness who might have seen or deduced too much about the true nature of Nobukazu's murder. Kazuha's presence and her determined search for clues posed a threat to the carefully crafted plan. Secondly, by creating a scene that mirrored the earlier murder, the assailant aimed to heighten the confusion and terror among the remaining guests and investigators at the mansion. This act of violence served to reinforce the idea of a supernatural curse or a methodical killer still at large, thereby diverting attention away from the true perpetrator and their underlying motives.",
+      "evidence": [
+        {"type": "BB pellets", "description": "found in the shed.", "importance": 3},
+        {"type": "Stun gun", "description": "used to knock out Kazuha.", "importance": 4}
+      ]
+    }
+  ],
+  "culprit": {
+    "name": "Robert Taylor",
+    "age": 26,
+    "occupation": "Photographer",
+    "motive": "Revenge for Misa's death",
+    "crimes": [
+      "Murder of Takeda Nobukazu",
+      "Murder of Negishi Akio",
+      "Attempted murder of Toyama Kazuha"
+    ]
+  }
+}
