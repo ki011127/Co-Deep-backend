@@ -1,0 +1,106 @@
+{
+    "case_development": [
+      {
+          "incident": 1,
+          "location": "Meeting with Detective Mori",
+          "description": "Shogo Somei and Miako Kuzumi, representing a small outsourced production company, approach Detective Kogoro Mori about a special program that covers detectives 24 hours a day. They manage to get Mori's consent by involving Yoko Okino.",
+          "evidence": []
+      },
+      {
+          "incident": 2,
+          "location": "Raisaku's Apartment",
+          "description": "On a rainy day, Somei, Conan, Ran, and Kogoro arrive at producer Raisaku Nakame's apartment for a meeting. Somei is noticeably late and soaked from the rain despite driving. They find Raisaku dead from cyanide poisoning in his coffee, with the scene staged to suggest suicide.",
+          "evidence": [
+              {"type": "Coffee cup and saucer", "description": "placed deliberately to mislead investigators.", "importance": 4}
+          ]
+      },
+      {
+          "incident": 3,
+          "location": "Initial Investigation",
+          "description": "The police begin their investigation, explaining that the scene's setup could imply a murder staged as suicide. They suspect Somei due to his lack of alibi and evidence manipulation.",
+          "evidence": [
+              {"type": "Spilled coffee", "description": "indicating tampering with the scene.", "importance": 3}
+          ]
+      },
+      {
+          "incident": 4,
+          "location": "Further Examination",
+          "description": "During a closer examination, Conan notices that the placement of the fork and cake plate suggests the presence of another person. This complicates the initial theory of suicide.",
+          "evidence": [
+              {"type": "Fork and cake plate", "description": "suggesting the presence of another person.", "importance": 2}
+          ]
+      },
+      {
+          "incident": 5,
+          "location": "Crime Scene Analysis",
+          "description": "Conan discovers additional coffee marks on the chair, indicating the criminal was present when the coffee was spilled. This points to an impossible crime since the apartment was locked from inside.",
+          "evidence": [
+              {"type": "Coffee marks on chair legs", "description": "suggesting movement after coffee spilled.", "importance": 4}
+          ]
+      },
+      {
+          "incident": 6,
+          "location": "Interviews and Discoveries",
+          "description": "Conan interviews witnesses and finds that Somei was seen at a pharmacy during the time of the crime. This alibi seems to conflict with Somei's actions and statements.",
+          "evidence": [
+              {"type": "Testimony from pharmacist", "description": "placing Somei at the pharmacy at the time of crime.", "importance": 3}
+          ]
+      },
+      {
+          "incident": 7,
+          "location": "Revealing the True Sequence",
+          "description": "Conan, using Kogoro's voice, reveals the true sequence of events. He uncovers that the real culprit was Miako Kuzumi, who poisoned Raisaku and then committed suicide by jumping from the balcony. Somei manipulated the evidence to protect her reputation.",
+          "evidence": [
+              {"type": "Two coffee cups and plates", "description": "indicating two people were present.", "importance": 4}
+          ]
+      },
+      {
+          "incident": 8,
+          "location": "Final Discovery",
+          "description": "Conan discovers the fork hidden in Somei's jacket, revealing the last piece of the puzzle. This confirms that Somei was covering up for Miako, who had poisoned Raisaku.",
+          "evidence": [
+              {"type": "Fork hidden in Somei's jacket", "description": "revealed by Conan as the missing piece of evidence.", "importance": 3}
+          ]
+      }
+    ],
+    "suspects": [
+      {
+        "name": "Shogo Somei",
+        "alibi": "None (suspected but not the real culprit)",
+        "motive": "Protect Miako Kuzumi's reputation",
+        "evidence": [
+          {"type": "Manipulated coffee cup and saucer", "description": "staged to mislead investigators.", "importance": 4}
+        ]
+      },
+      {
+        "name": "Miako Kuzumi",
+        "alibi": "None (deceased)",
+        "motive": "Coercion and intimidation of Somei",
+        "evidence": [
+          {"type": "Cyanide in coffee", "description": "used to poison Raisaku.", "importance": 5},
+          {"type": "Phone call to Somei before suicide", "description": "confessing her love and crime.", "importance": 4}
+        ]
+      }
+    ],
+    "crime_tricks": [
+      {
+        "crime": "Murder of Raisaku Nakame",
+        "method": "Miako Kuzumi poisoned Raisaku's coffee and then committed suicide by jumping from the balcony. Somei, finding her body, hid it in his car trunk and manipulated the scene to make it look like a suicide.",
+        "motive": "Miako was driven by the desire to protect Somei from Raisaku's coercion and threats.",
+        "evidence": [
+          {"type": "Two coffee cups and plates", "description": "indicating two people were present.", "importance": 4},
+          {"type": "Fork hidden in Somei's jacket", "description": "revealed by Conan as the missing piece of evidence.", "importance": 3}
+        ]
+      }
+    ],
+    "culprit": {
+      "name": "Miako Kuzumi",
+      "age": 29,
+      "occupation": "Employee at Somei's company",
+      "motive": "Protect Somei from Raisaku's coercion",
+      "crimes": [
+        "Murder of Raisaku Nakame"
+      ]
+    }
+  }
+  

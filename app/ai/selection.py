@@ -26,11 +26,11 @@ class Selection():
             The basic detail story will given in user's input.
             You must create a selection based on the basic story and the user's age group.
             Target detail is the detail of the story that the user wants to create a selection.
-            Full details is the full detail of the story that the each selection should be based on.
-            You must create a selection that leads to the next detail story.
-            You must create a selection that is based on the target detail.
+            Full details is the full detail of the story that the correct selection should be based on.
             You must follow the selection difference by age group. This is a very important part.
             The maximum number of selections is 3.
+            You must create one selection that leads to the target detail's next detail story and is based on the target detail.
+            You must create two selections that are out of the context of the story.
             The selection difference by age group(Most important part!!)
                 1. 5-9 years old: under 10 words of each selection, simple and easy to understand
                 2. 10-13 years old: over 10 under 15 words of each selection, simple and easy to understand
@@ -84,18 +84,15 @@ if __name__ == "__main__":
     
     ## detail.py 에서 생성된 데이터
     full_details = """
-    Heiji was on his way to the warehouse, following a tip he received about suspicious activities. The old building stood eerily silent as he approached it. His heart pounded with a mix of fear and determination. He knew Kazuha was in danger, and every second counted. As he pushed open the creaky door, he heard faint sounds coming from deep inside the warehouse.
+    Conan looked around the room carefully. He saw a fork and a cake plate on the table. This made him think that someone else was with Raisaku before he died. It didn't look like a simple suicide anymore.
 
-    Navigating through the dimly lit space, Heiji's eyes scanned for any signs of movement. Suddenly, he spotted Kazuha tied up with fishing line in a corner. Her wrists were bound tightly, and her face showed signs of distress. But what horrified him the most was the noose around her neck, set up to make it look like she was about to be hanged. Without wasting a moment, Heiji rushed to her side.
+    Then, Conan found two coffee cups and plates on another table. This showed that two people were present in the room. Additionally, Conan thought that somei might have evidence of the case.
 
-    "Hang on, Kazuha! I'm here," Heiji whispered urgently as he began working on the knots. The fishing line cut into his fingers, but he ignored the pain. Kazuha's eyes filled with tears of relief as she saw Heiji. She tried to speak, but her voice was weak from fear and exhaustion. "It's going to be okay," Heiji reassured her, focusing on freeing her from the deadly trap.
+    Next, Conan checked Somei's jacket. He found a hidden fork inside it. Now, Conan was sure that Raisaku did not die alone.
 
-    After what felt like an eternity, Heiji finally managed to untie Kazuha. He carefully removed the noose from around her neck and helped her stand up. "Can you walk?" he asked gently. Kazuha nodded shakily, leaning on him for support. They needed to get out of there quickly before whoever did this returned. As they made their way towards the exit, Heiji kept a vigilant eye on their surroundings.
-
-    Once outside, they both took a moment to catch their breath. The cool night air felt refreshing after the tense situation inside the warehouse. "Thank you, Heiji," Kazuha said softly, her voice still trembling. "I don't know what would have happened if you hadn't come." Heiji gave her a reassuring smile and replied, "You're safe now, that's all that matters." They knew they had to report this incident and find out who was behind such a cruel act, but for now, they were just grateful to be alive and together.
     """
     
-    target_detail = "Navigating through the dimly lit space, Heiji's eyes scanned for any signs of movement. Suddenly, he spotted Kazuha tied up with fishing line in a corner. Her wrists were bound tightly, and her face showed signs of distress. But what horrified him the most was the noose around her neck, set up to make it look like she was about to be hanged. Without wasting a moment, Heiji rushed to her side."
+    target_detail = "Then, Conan found two coffee cups and plates on another table. This showed that two people were present in the room. Additionally, Conan thought that somei might have evidence of the case."
     
     selection.make_selection(target_detail, full_details, 15)
     

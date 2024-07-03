@@ -38,7 +38,7 @@ class Episode():
         
     def make_episode(self, age):
         ## Co-Deep-backend 에서 실행할 때는 아래의 경로를 사용
-        self.read_file("app/data/conan/story.json")
+        self.read_file("app/data/conan/story2.json")
         
         prompt = f"""
             You are a model that makes episodes based on the basic story.
@@ -65,10 +65,9 @@ class Episode():
             You can add or remove evidence, case_development based on the basic story.
             I don't want you to use all the case development story. Just pick some important parts and make it into an episode.
             The episode difference by age group(Most important part!!)
-                1. 5-9 years old: under 5 episodes, must contain 1~2 evidences, intuitive, important, criminal evidence, importance of 4 points or higher evidence, light and fun materials, no cruel or dangerous materials
-                2. 10-13 years old: 5~8 episodes, must contain 2~5 evidences, intuitive, important, criminal evidence, importance of 4 points or higher evidence, light and fun materials, no cruel or dangerous materials
-                3. 14-16 years old: 8~12 episodes, must contain 5~7 evidences, confusing and hard-to-find evidence, importance of 2 points or higher evidence, a story based on the original story, cruel and dangerous material is not direct, but indirectly labeled
-                4. 17-19 years old: 12~15 episodes, must contain 7~10 evidences, more confusing and hard-to-find, importance of 1 points or higher evidence, difficult evidence, a story based on the original story, cruel and dangerous materials is allowed
+                1. 10-13 years old: 4~5 episodes, intuitive, important, criminal evidence, importance of 4 points or higher evidence, light and fun materials, no cruel or dangerous materials
+                2. 14-16 years old: 6~8 episodes, confusing and hard-to-find evidence, importance of 2 points or higher evidence, a story based on the original story, cruel and dangerous material is not direct, but indirectly labeled
+                3. 17-19 years old: 9~12 episodes, more confusing and hard-to-find, importance of 1 points or higher evidence, difficult evidence, a story based on the original story, cruel and dangerous materials is allowed
             You must answer in English.
             User's age: {age}
             
@@ -173,5 +172,5 @@ class Episode():
     
 if __name__ == "__main__":
     episode = Episode()
-    print(episode.make_episode(18))
+    print(episode.make_episode(15))
     

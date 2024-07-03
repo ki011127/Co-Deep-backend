@@ -2,8 +2,42 @@ from models import mongodb
 from bson import ObjectId
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from ai.wrong_selection import WrongSelection
+import os
+import json
 
 class DetailController:
+    async def get_details_json(self, story, age):
+        ## story 는 data 폴더 안의 conan, sherlock 등을 의미
+        ver = 0
+        if age < 14:
+            ver = 1
+        elif age < 17:
+            ver = 2
+        else:
+            ver = 3
+        
+        ## Co-Deep-backend 에서 실행할 때는 아래의 경로를 사용
+        file_path = "data/" + story + "/detail/" + str(ver) + ".json"
+        print(file_path)
+        absolute_path = os.path.normpath(os.path.abspath(file_path)).strip()
+        print(f"Reading file: {absolute_path}")
+        
+        if not os.path.exists(absolute_path):
+            print(f"File not found: {absolute_path}")
+            return
+        
+        try:
+            with open(absolute_path, 'r', encoding='utf-8') as json_file:
+                # self.episodes = json.load(json_file)
+                return json.load(json_file)
+                # print("JSON Data:", self.data)
+        except FileNotFoundError:
+            print(f"File not found: {file_path}")
+        except json.JSONDecodeError:
+            print(f"Error decoding JSON from file: {file_path}")
+    
+
     async def get_detail(self, episode_id, user_id):
         details = await mongodb.db.details.find({"episode_id": episode_id, "user_id": user_id},
             {"_id": 0, "episode_id":1,"content": 1, "user_id": 1, "created_at": 1}
@@ -11,12 +45,48 @@ class DetailController:
         print(details)
         return details
     
-    async def put_detail(self, episode_id, content, user_id, created_at):
+
+    async def put_detail(self, episode_id, user_id, age, story_name, order, created_at):
+        data = await self.get_details_json(story_name, age)
+        episode_details = [detail for detail in data["details"] if detail["espisode_id"] == episode_id]
+        content = ""
+        selection_id = []
+        if 0 <= order < len(episode_details):
+            target_detail = episode_details[order]
+            content = target_detail.get("content", "")
+            selection_id = target_detail.get("selection_id", None)
+            print(f'Content: {content}')
+            print(f'Selection ID: {selection_id}')
+        else:
+            print(f'Target index {order} is out of range.')
+
         detail = {
             "episode_id": episode_id,
             "content": content,
             "user_id": user_id,
+            "selection_id": selection_id,
             "created_at": created_at,
         }
         details = await mongodb.db.details.insert_one(detail)
-        return details
+        return {
+            "content": content,
+            "selection_id": selection_id,
+            "num_of_details": len(episode_details)
+        }
+    
+    async def wrong_detail(self, episode_id, user_id, selection, content, created_at):
+        wrongSelection = WrongSelection()
+        content = "Inside the apartment, they found Raisaku lying on the floor. His coffee cup was next to him. It looked like he might have poisoned himself by drinking the coffee. Conan started to think about what could have happened."
+        selection = "Leave the apartment and check the mailbox for any letters."
+        value = wrongSelection.create_detail(selection, content)
+        detail = {
+            "episode_id": episode_id,
+            "content": content,
+            "user_id": user_id,
+            "selection_id": [],
+            "created_at": created_at,
+        }
+        details = await mongodb.db.details.insert_one(detail)
+        return {
+            "content": value
+        }

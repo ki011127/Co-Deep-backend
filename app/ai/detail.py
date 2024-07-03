@@ -24,14 +24,12 @@ class Detail():
     def get_episodes(self, story, age):
         ## story 는 data 폴더 안의 conan, sherlock 등을 의미
         ver = 0
-        if age < 10:
+        if age < 14:
             ver = 1
-        elif age < 14:
-            ver = 2
         elif age < 17:
-            ver = 3
+            ver = 2
         else:
-            ver = 4
+            ver = 3
         
         ## Co-Deep-backend 에서 실행할 때는 아래의 경로를 사용
         file_path = "app/data/" + story + "/episode/" + str(ver) + ".json"
@@ -52,7 +50,7 @@ class Detail():
         except json.JSONDecodeError:
             print(f"Error decoding JSON from file: {file_path}")
         
-    def make_story(self, episode, culprit_details=None, has_evidence=False):
+    def make_story(self, episode, evidences=None, has_evidence=False):
         
         prompt = f"""
             You are a model that controls the difficulty of each age group based on the basic episode.
@@ -63,10 +61,9 @@ class Detail():
             In particular, if the target is over 14 years old, the entire sentence must go over 15 lines.
             You must translate the user's input into English based on the user's age group.
             The level of difficulty by age group
-                1. 5-9 years old: very easy words, basic grammar, use no more than 8 words per sentence, full length no more than 3 sentences per paragraph, no more than 2 paragraphs
-                2. 10-13 years old: elementary school words, basic grammar, use no more than 13 words per sentence, total length not more than 5 sentences per paragraph, no more than 3 paragraphs
-                3. 14-16 years old: words for middle school students, applied grammar, use no more than 20 words per sentence, total length is more than 5 no more than 10 sentence, no more than 5 paragraphs
-                4. 17-19 years old: words for high school students, advanced grammar, use words of no more than 30 words per sentence, the total length is more than 10 no more than 20 sentences, no more than 6 paragraphs
+                1. 10-13 years old: elementary school words, basic grammar, use no more than 13 words per sentence, total length not more than 5 sentences per paragraph, no more than 3 paragraphs
+                2. 14-16 years old: words for middle school students, applied grammar, use no more than 20 words per sentence, total length is more than 5 no more than 10 sentence, no more than 5 paragraphs
+                3. 17-19 years old: words for high school students, advanced grammar, use words of no more than 30 words per sentence, the total length is more than 10 no more than 20 sentences, no more than 6 paragraphs
             You must answer in English.
             
             Format the output as follows:
@@ -80,19 +77,22 @@ class Detail():
                 User's age: {self.age}
         """
         
-        if culprit_details:
-            prompt += f"\n\n\tAdditionally, include the following culprit details in the story:\n"
-            prompt += f"\tName: {culprit_details['name']}\n"
-            prompt += f"\tAge: {culprit_details['age']}\n"
-            prompt += f"\tOccupation: {culprit_details['occupation']}\n"
-            prompt += f"\tMotive: {culprit_details['motive']}\n"
-            prompt += "\tCrimes: " + ", ".join(culprit_details['crimes']) + "\n"
+        # if culprit_details:
+        #     prompt += f"\n\n\tAdditionally, include the following evidence in the story:\n"
+        #     prompt += f"\tName: {culprit_details['name']}\n"
+        #     prompt += f"\tAge: {culprit_details['age']}\n"
+        #     prompt += f"\tOccupation: {culprit_details['occupation']}\n"
+        #     prompt += f"\tMotive: {culprit_details['motive']}\n"
+        #     prompt += "\tCrimes: " + ", ".join(culprit_details['crimes']) + "\n"
 
         if has_evidence:
-            prompt += "\n\tWrite a detailed story in 5 paragraphs based on the above information."
+            prompt += f"\n\n\tAdditionally, include the following evidence in the story:\n"
+            for i in range(len(evidences)):
+                prompt += f"\tevidence {i+1}: {evidences[i]}\n"
+            prompt += "\n\tWrite a detailed story based on the above information."
+            prompt += "\n\tDon't feature evidences in the first paragraph."
         else:
             prompt += "\n\tWrite a detailed story in no more than 3 paragraphs based on the above information."
-        
         response = self.client.chat.completions.create(
             model="gpt-4o",
             messages=[
@@ -115,13 +115,16 @@ class Detail():
         for episode in self.episodes['episodes']:
             if episode['episode'] == episode_number:
                 has_evidence = 'evidence_collected' in episode and len(episode['evidence_collected']) > 0
-                culprit_details = self.episodes['culprit_details'] if episode['episode'] == last_episode_number else None
-                story =  self.make_story(episode, culprit_details, has_evidence)
+                evidences = []
+                if(has_evidence):
+                    evidences = episode['evidence_collected']
+                #culprit_details = self.episodes['culprit_details'] if episode['episode'] == last_episode_number else None
+                story =  self.make_story(episode, evidences, has_evidence)
                 return f"Episode {episode['episode']}: {episode['title']}\n\n{story}\n\n{'='*50}\n"
     
 if __name__ == "__main__":
     detail = Detail("conan", 15)
     
-    detail.run(6)
+    detail.run(2)
     
     

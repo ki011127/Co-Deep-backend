@@ -1,101 +1,94 @@
 {
-    "episodes": [
-      {
-        "episode": 1,
-        "title": "Lost in the Forest",
-        "description": "Hattori Heiji and Toyama Kazuha receive a mysterious invitation to the Takeda Mansion in Tottori Prefecture. They set out on their motorcycle but soon get lost in the dense forest. Running out of fuel and losing their phone, they decide to continue on foot, hoping to find someone who can guide them."
-      },
-      {
-        "episode": 2,
-        "title": "Meeting New Friends",
-        "description": "While wandering through the forest, Heiji and Kazuha meet Robert Taylor, an American photographer. Together, they stumble upon Kogoro Mori, Edogawa Conan, and Ran Mori. It turns out that everyone has been invited to the mansion under different pretexts. They decide to stick together as they approach the mansion."
-      },
-      {
-        "episode": 3,
-        "title": "Dinner at the Mansion",
-        "description": "After settling in at the mansion, the group gathers for dinner. The atmosphere is tense and ominous. During dinner, Robert expresses his desire to visit Misa's grave, a woman who cared for him three years ago. Ran and Kazuha accompany him to the grave site, where Robert reveals his deep sorrow over Misa's death."
-      },
-      {
-        "episode": 4,
-        "title": "A Shocking Discovery",
-        "description": "The group finds Takeda Nobukazu's body hanging in the warehouse, staged to look like a spider's web. The discovery shocks everyone and deepens the mystery.",
-        "evidence_collected": [
-          {
-            "type": "Blow to the back of the head",
-            "description": "indicating an attack from behind.",
-            "importance": 4
-          },
-          {
-            "type": "No exit except a small window",
-            "description": "pointing to a locked-room scenario.",
-            "importance": 5
-          }
-        ]
-      },
-      {
-        "episode": 5,
-        "title": "Kazuha's Disappearance",
-        "description": "Kazuha is attacked with a stun gun while searching for her lost phone charm in the shed and loses consciousness. Later, Ran finds that Kazuha has disappeared, heightening tension and fear among the group.",
-        "evidence_collected": [
-          {
-            "type": "Stun gun",
-            "description": "used to knock out Kazuha, suggesting the assailant prepared for an attack.",
-            "importance": 4
-          }
-        ]
-      },
-      {
-        "episode": 6,
-        "title": "Rescue Mission",
-        "description": "Heiji rescues Kazuha, who is found tied up with fishing line in the warehouse. The noose around her neck was a setup to make it appear as if she was about to be hanged.",
-        "evidence_collected": [
-          {
-            "type": "Fishing line",
-            "description": "used to tie up Kazuha.",
-            "importance": 3
-          },
-          {
-            "type": "Noose",
-            "description": "a setup, indicating a staged scene.",
-            "importance": 4
-          }
-        ]
-      },
-      {
-        "episode": 7,
-        "title": "Uncovering Secrets",
-        "description": "Conan and Heiji discover that Nobukazu was involved in drug trafficking through his phone records, providing a possible motive for his murder.",
-        "evidence_collected": [
-          {
-            "type": "Nobukazu's phone records",
-            "description": "showing involvement in drug trafficking.",
-            "importance": 5
-          }
-        ]
-      },
-      {
-        "episode": 8,
-        "title": "The Culprit Revealed",
-        "description": "Conan and Heiji identify Robert Taylor as the perpetrator. Driven by vengeance for Misa's death, Robert's statements reveal his deep-seated anger and desire for revenge.",
-        "evidence_collected": [
-          {
-            "type": "Incriminating statements",
-            "description": "made by Robert about Nobukazu's death.",
-            "importance": 5
-          }
-        ]
-      }
-    ],
-    "culprit_details": {
-      "name": "Robert Taylor",
-      "age": 26,
-      "occupation": "Photographer",
-      "motive": "Revenge for Misa's death",
-      "crimes": [
-        "Murder of Takeda Nobukazu",
-        "Murder of Negishi Akio",
-        "Attempted murder of Toyama Kazuha"
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "Meeting with Detective Mori",
+      "description": "Shogo Somei and Miako Kuzumi, representatives of a small outsourced production company, approach Detective Kogoro Mori about a special program that covers detectives 24 hours a day. They manage to get Mori's consent by involving Yoko Okino, a famous celebrity. The meeting seems straightforward, but Conan feels something is off."
+    },
+    {
+      "episode": 2,
+      "title": "Incident at Raisaku's Apartment",
+      "description": "On a rainy day, Somei, Conan, Ran, and Kogoro arrive at producer Raisaku Nakame's apartment for a meeting. Somei is noticeably late and soaked from the rain despite driving. They find Raisaku dead from cyanide poisoning in his coffee, with the scene staged to suggest suicide.",
+      "evidence_collected": [
+        {
+          "type": "Coffee cup and saucer",
+          "description": "placed deliberately to mislead investigators.",
+          "importance": 4
+        }
       ]
+    },
+    {
+      "episode": 3,
+      "title": "Initial Investigation",
+      "description": "The police begin their investigation, explaining that the scene's setup could imply a murder staged as suicide. They suspect Somei due to his lack of alibi and evidence manipulation."
+    },
+    {
+      "episode": 4,
+      "title": "Further Examination",
+      "description": "During a closer examination, Conan notices that the placement of the fork and cake plate suggests the presence of another person. This complicates the initial theory of suicide.",
+      "evidence_collected": [
+        {
+          "type": "Fork and cake plate",
+          "description": "suggesting the presence of another person.",
+          "importance": 2
+        }
+      ]
+    },
+    {
+      "episode": 5,
+      "title": "Crime Scene Analysis",
+      "description": "Conan discovers additional coffee marks on the chair, indicating the criminal was present when the coffee was spilled. This points to an impossible crime since the apartment was locked from inside.",
+      "evidence_collected": [
+        {
+          "type": "Coffee marks on chair legs",
+          "description": "suggesting movement after coffee spilled.",
+          "importance": 4
+        }
+      ]
+    },
+    {
+      "episode": 6,
+      "title": "Interviews and Discoveries",
+      "description": "Conan interviews witnesses and finds that Somei was seen at a pharmacy during the time of the crime. This alibi seems to conflict with Somei's actions and statements.",
+      "evidence_collected": [
+        {
+          "type": "Testimony from pharmacist",
+          "description": "placing Somei at the pharmacy at the time of crime.",
+          "importance": 3
+        }
+      ]
+    },
+    {
+      "episode": 7,
+      "title": "Revealing the True Sequence",
+      "description": "Conan notices something strange during a closer examination. The fork and cake plate suggest someone else was there with Raisaku before he died. This makes it clear that it wasn't just a simple suicide.",
+      "evidence_collected": [
+        {
+          "type": "Two coffee cups and plates",
+          "description": "indicating two people were present.",
+          "importance": 4
+        },
+        {
+          "type": "Fork hidden in Somei's jacket",
+          "description": "revealed by Conan as the missing piece of evidence.",
+          "importance": 4
+        }
+      ]
+    },
+    {
+      "episode": 8,
+      "title": "The Culprit Revealed",
+      "description": "Conan, using Kogoro's voice, reveals the true sequence of events. He uncovers that the real culprit was Miako Kuzumi, who poisoned Raisaku and then committed suicide by jumping from the balcony. Somei manipulated the evidence to protect her reputation."
     }
+  ],
+  "culprit_details": {
+    "name": "Miako Kuzumi",
+    "age": 29,
+    "occupation": "Employee at Somei's company",
+    "motive": "Protect Somei from Raisaku's coercion",
+    "crimes": [
+      "Murder of Raisaku Nakame"
+    ]
+  }
 }
   
