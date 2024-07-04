@@ -40,7 +40,7 @@ class DetailController:
 
     async def get_detail(self, episode_id, user_id):
         details = await mongodb.db.details.find({"episode_id": episode_id, "user_id": user_id},
-            {"_id": 0, "episode_id":1,"content": 1, "user_id": 1, "created_at": 1}
+            {"_id": 1, "episode_id":1,"content": 1, "user_id": 1, "selection_id": 1,"created_at": 1}
         ).to_list(length=None)
         print(details)
         return details

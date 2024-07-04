@@ -11,14 +11,14 @@ router = APIRouter(
     tags=["details"]
 )
 
-# @router.post("/get_detail",\
-#     description="detail 반환")
-# async def get_detail(detail: DetailGetRequest):
-#     details = await detail_controller.get_detail(detail.episode_id, detail.user_id)
-#     if details:
-#         return { "result": "success", "detail": details}
-#     else:
-#         return { "result": "fail" }
+@router.post("/get_detail",\
+    description="detail 반환")
+async def get_detail(detail: DetailGetRequest):
+    details = await detail_controller.get_detail(detail.episode_id, detail.user_id)
+    if details:
+        return { "result": "success", "detail": details}
+    else:
+        return { "result": "fail" }
 
 @router.post("/wrong_detail",\
     description="잘못된 선택지에 대한 detail 반환")
