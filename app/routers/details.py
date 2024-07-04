@@ -32,8 +32,8 @@ async def wrong_detail(detail: WrongDetailRequest):
 @router.post("/put_detail",\
     description="detail 생성 및 저장")
 async def put_detail(detail: DetailCreateRequest):
-    details = await detail_controller.put_detail(detail.episode_id, detail.user_id, detail.age, detail.story_name, detail.order, detail.created_at)
-    if details:
-        return { "result": "success", "details":details}
+    detail = await detail_controller.put_detail(detail.episode_id, detail.user_id, detail.age, detail.story_name, detail.order, detail.created_at)
+    if detail:
+        return { "result": "success", "detail":detail}
     else:
         return { "result": "fail" }
