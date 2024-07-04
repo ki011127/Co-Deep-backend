@@ -13,7 +13,14 @@ class UserController:
             return existing_user
         else:
             # 사용자가 없으면, 새로운 사용자를 추가
-            new_user = await mongodb.db.users.insert_one({"name": name, "age": age})
+            ver = 0
+            if age < 14:
+                ver = 1
+            elif age < 17:
+                ver = 2
+            else:
+                ver = 3
+            new_user = await mongodb.db.users.insert_one({"name": name, "age": ver})
             find_user = await mongodb.db.users.find_one({"name": name })
             print(find_user)
             return find_user
