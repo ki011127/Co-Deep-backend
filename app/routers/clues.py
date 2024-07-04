@@ -12,8 +12,7 @@ router = APIRouter(
 @router.post("/get_clue",\
     description="단서 정보 반환")
 async def get_clue(clue: ClueCreateRequest):
-    print(clue.clue_id)
-    clue = await clue_controller.get_clue(clue.clue_id)
+    clue = await clue_controller.get_clue(clue.id)
     if clue:
         return { "result": "success", "clue": clue}
     else:

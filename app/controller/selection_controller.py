@@ -4,10 +4,13 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 class SelectionController:    
-    async def get_episodes(self, story_id, age):
-        print(story_id)
-        episodes = await mongodb.db.episodes.find({"story_id": story_id, "age": age},
-            {"_id": 0, "episode_id":1,"story_id": 1, "age": 1, "order": 1, "content": 1, "clue_ids": 1, "img": 1}
+    async def get_selections(self, selection_id):
+        for i in range(len(selection_id)):
+            selection_id[i] = ObjectId(selection_id[i])
+        selections = await mongodb.db.selections.find(
+        {"_id": {"$in": selection_id}},
+        {"_id": 1, "clue_id": 1, "content": 1, "correct": 1}
         ).to_list(length=None)
-        print(episodes)
-        return episodes
+        for i in range(len(selections)):
+            selections[i]["_id"] = str(selections[i]["_id"])
+        return selections

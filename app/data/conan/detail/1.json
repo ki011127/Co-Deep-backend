@@ -19,7 +19,7 @@
         {
             "espisode_id": "1",
             "content": "Inside the apartment, they found Raisaku lying on the floor. His coffee cup was next to him. It looked like he might have poisoned himself by drinking the coffee. Conan started to think about what could have happened.",
-            "selection_id": ["0", "1", "2"]
+            "selection_id": ["668593d7c0f02cff7faece21", "668593d7c0f02cff7fa2ce21", "668592d7c0f02cff7fa2ce21"]
         },
         {
             "espisode_id": "1",
@@ -32,7 +32,7 @@
         {
             "espisode_id": "2",
             "content": "The police began their investigation. They thought it might be a murder made to look like a suicide. Somei became a suspect because he had no alibi. He also seemed to know too much about the scene. But there was a witness to prove his alibi.",
-            "selection_id": ["3", "4", "5"]
+            "selection_id": ["662592d7c0f02cff7fa2ce21", "628592d7c0f02cff7fa2ce21", "528592d7c0f02cff7fa2ce21"]
         },
         {
             "espisode_id": "2",
@@ -45,12 +45,12 @@
         {
             "espisode_id": "3",
             "content": "Conan looked around the room carefully. He saw a fork and a cake plate on the table. This made him think that someone else was with Raisaku before he died. It didn't look like a simple suicide anymore.",
-            "selection_id": ["6", "7", "8"]
+            "selection_id": ["662299d7c0f02cff7fa2ce21", "528597d7c0f02cff7fa3ce21", "661593d7c0f02cff7fa2ce21"]
         },
         {
             "espisode_id": "3",
             "content": "Then, Conan found two coffee cups and plates on another table. This showed that two people were present in the room. Additionally, Conan thought that somei might have evidence of the case.",
-            "selection_id": ["9", "10", "11"]
+            "selection_id": ["662292d7c0f02cff7fa2ce21", "528592d7c0f02cff7fa3ce21", "521592d7c0f02cff7fa3ce21"]
         },
         {
             "espisode_id": "3",
