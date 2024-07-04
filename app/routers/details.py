@@ -34,6 +34,6 @@ async def wrong_detail(detail: WrongDetailRequest):
 async def put_detail(detail: DetailCreateRequest):
     details = await detail_controller.put_detail(detail.episode_id, detail.user_id, detail.age, detail.story_name, detail.order, detail.created_at)
     if details:
-        return { "result": "success"}
+        return { "result": "success", "details":details}
     else:
         return { "result": "fail" }
