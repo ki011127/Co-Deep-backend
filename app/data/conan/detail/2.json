@@ -1,0 +1,72 @@
+{
+    "details": [
+        {
+            "espisode_id": "0",
+            "content": "Detective Kogoro Mori was having a quiet day when Shogo Somei and Miako Kuzumi visited him. They worked for a small production company and had an exciting idea. They wanted to make a new TV show that followed detectives all day and night. Mori thought it sounded interesting but wasn't sure at first."
+        },
+        {
+            "espisode_id": "0",
+            "content": "Then, they introduced Yoko Okino, a famous singer who Mori admired. She explained how fun the show would be and how many people would watch it. Her words made Mori very excited about the project. He finally agreed to join the TV show with a big smile on his face."
+        },
+        {
+            "espisode_id": "0",
+            "content": "Shogo and Miako were very happy. They thanked Mori and promised to make the best TV show ever. With Yoko's help, they knew it would be a great success. Detective Mori couldn't wait to start this new adventure!"
+        },
+        {
+            "espisode_id": "1",
+            "content": "On a rainy day, Somei, Conan, Ran, and Kogoro went to producer Raisaku Nakame's apartment for a meeting. The rain was pouring down hard. Somei arrived late and was soaked from the rain even though he drove there. Everyone wondered why he was so wet."
+        },
+        {
+            "espisode_id": "1",
+            "content": "Inside the apartment, they found Raisaku lying on the floor. His coffee cup was next to him. It looked like he might have poisoned himself by drinking the coffee. Conan started to think about what could have happened.",
+            "selection_id": ["668593d7c0f02cff7faece21", "668593d7c0f02cff7fa2ce21", "668592d7c0f02cff7fa2ce21"]
+        },
+        {
+            "espisode_id": "1",
+            "content": "Conan noticed something strange about the coffee cup and saucer. They were placed very neatly on the table. It seemed like someone put them there on purpose to trick people."
+        },
+        {
+            "espisode_id": "1",
+            "content": "He told Ran and Kogoro about his thoughts. They all agreed that it didn't look like Raisaku had poisoned himself. They decided to investigate more to find out the truth behind Raisaku's death."
+        },
+        {
+            "espisode_id": "2",
+            "content": "The police began their investigation. They thought it might be a murder made to look like a suicide. Somei became a suspect because he had no alibi. He also seemed to know too much about the scene. But there was a witness to prove his alibi.",
+            "selection_id": ["662592d7c0f02cff7fa2ce21", "628592d7c0f02cff7fa2ce21", "528592d7c0f02cff7fa2ce21"]
+        },
+        {
+            "espisode_id": "2",
+            "content": "Conan decided to interview witnesses. He found out that Somei was seen at a pharmacy during the time of the crime. This was important information. It could help prove if Somei was innocent or guilty."
+        },
+        {
+            "espisode_id": "2",
+            "content": "A pharmacist gave a testimony. The pharmacist said Somei was at the pharmacy when the crime happened. This made things confusing. Somei's actions and statements did not match this alibi. Conan needed to find out the truth."
+        },
+        {
+            "espisode_id": "3",
+            "content": "Conan looked around the room carefully. He saw a fork and a cake plate on the table. This made him think that someone else was with Raisaku before he died. It didn't look like a simple suicide anymore.",
+            "selection_id": ["662299d7c0f02cff7fa2ce21", "528597d7c0f02cff7fa3ce21", "661593d7c0f02cff7fa2ce21"]
+        },
+        {
+            "espisode_id": "3",
+            "content": "Then, Conan found two coffee cups and plates on another table. This showed that two people were present in the room. Additionally, Conan thought that somei might have evidence of the case.",
+            "selection_id": ["662292d7c0f02cff7fa2ce21", "528592d7c0f02cff7fa3ce21", "521592d7c0f02cff7fa3ce21"]
+        },
+        {
+            "espisode_id": "3",
+            "content": "Next, Conan checked Somei's jacket. He found a hidden fork inside it. Now, Conan was sure that Raisaku did not die alone."
+        },
+        {
+            "espisode_id": "4",
+            "content": "Conan used his sharp detective skills to find out the truth. He discovered that Miako Kuzumi was the real culprit behind Raisaku's death. She had poisoned Raisaku because he was threatening Somei. Miako wanted to protect Somei from these threats."
+        },
+        {
+            "espisode_id": "4",
+            "content": "After poisoning Raisaku, Miako felt very guilty and decided to take her own life. She thought this was the only way to keep Somei safe. When Somei found out what Miako had done, he tried to cover it up. He wanted to protect Miako's reputation and didn't want anyone to know the truth."
+        },
+        {
+            "espisode_id": "4",
+            "content": "In the end, Conan revealed everything. He explained how Miako had acted out of love and fear for Somei. Even though her actions were wrong, she believed she was doing the right thing to protect someone she cared about deeply."
+        }
+    ]
+}

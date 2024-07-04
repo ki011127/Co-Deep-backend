@@ -125,6 +125,6 @@ class Detail():
 if __name__ == "__main__":
     detail = Detail("conan", 15)
     
-    detail.run(2)
+    detail.run(8)
     
     
