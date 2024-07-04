@@ -3,8 +3,18 @@ from typing import Optional
 from fastapi import FastAPI
 from models import mongodb
 from routers import users, stories, episodes, details, clues, selections
+from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI() # FastAPI 모듈
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(users.router) # 다른 route파일들을 불러와 포함시킴
 app.include_router(stories.router)
 app.include_router(episodes.router)

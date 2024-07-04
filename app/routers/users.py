@@ -12,6 +12,7 @@ router = APIRouter(
 @router.post("/register",\
     description="페이지 접속 시 사용자 등록, 기존 회원 시 해당 사용자 반환")
 async def create_user(user: UserCreateRequest):
+    print(user)
     new_user = await user_controller.create_user(user.name, user.age)
     if new_user:
         return { "result": "success", "user": {"_id": str(new_user["_id"]), "age": new_user["age"]} }
