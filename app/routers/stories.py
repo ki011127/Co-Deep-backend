@@ -10,10 +10,10 @@ router = APIRouter(
     tags=["stories"]
 )
 
-@router.get("/info",\
+@router.get("/info/{age}",\
     description="페이지 접속 시 db내의 모든 스토리 정보 반환")
-async def get_story():
-    stories = await story_controller.get_story()
+async def get_story(age):
+    stories = await story_controller.get_story(age)
     if stories:
         return { "result": "success", "stories": stories}
     else:
