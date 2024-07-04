@@ -21,6 +21,19 @@ class StoryController:
             if first_ep:
                 first_ep[0]["_id"] = str(first_ep[0]["_id"])
                 stories[i]['first_ep'] = first_ep
+            else:
+                stories[i]['first_ep'] = [
+                    {
+                    "_id": "id",
+                    "story_id": "story_id",
+                    "age": 1,
+                    "clue_ids": [],
+                    "img": "이미지url",
+                    "order": 1,
+                    "title": "Homes",
+                    "description": "description"
+                    }
+                ]
         for i in range(len(stories)):
             stories[i]["_id"] = str(stories[i]["_id"])
         print(stories)
