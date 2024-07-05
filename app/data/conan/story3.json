@@ -1,0 +1,216 @@
+{
+    "case_development": [
+      {
+        "incident": 1,
+        "location": "Detective Agency",
+        "description": "Shogo Somei, the president of a small outsourced production company, and Miiko Kuzumi, an employee, approach Kogoro Mori to propose a special program that covers detectives 24 hours a day. Detective Mori agrees to participate due to the involvement of Yoko Okino. During the discussion, Ran notices the couple's watches that Shogo and Miiko are wearing, revealing their mutual affection.",
+        "evidence": []
+      },
+      {
+        "incident": 2,
+        "location": "Raisaku Nakame's Apartment",
+        "description": "On the day of the meeting with producer Raisaku Nakame, Kogoro, Conan, and Ran arrive at Raisaku's apartment in heavy rain, waiting for Shogo and Miiko. Shogo arrives 30 minutes late, soaked despite having driven there. Unable to get a response from Raisaku, Shogo insists on entering the apartment, citing concern over Raisaku's recent involvement in a scandal. They break the chain lock and enter, discovering Raisaku's body.",
+        "evidence": [
+          {
+            "type": "Soaked clothes",
+            "description": "indicating recent outdoor activity despite driving.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "incident": 3,
+        "location": "Raisaku Nakame's Living Room",
+        "description": "Raisaku Nakame is found dead from cyanide poisoning. The scene includes a spilled cup of coffee, a fork, a plate of cake, and signs of poisoning suicide. The police are unsure if it was suicide or murder. Conan finds that the coffee cup was intentionally placed on a support plate later, indicating evidence manipulation.",
+        "evidence": [
+          {
+            "type": "Cyanide in coffee cup",
+            "description": "indicating poisoning.",
+            "importance": 5
+          },
+          {
+            "type": "Support plate",
+            "description": "under the cup, suggesting post-crime manipulation.",
+            "importance": 4
+          },
+          {
+            "type": "Coffee marks on chair legs",
+            "description": "indicating the chair was moved.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "incident": 4,
+        "location": "Pharmacy",
+        "description": "Conan calls the company and pharmacy to confirm Shogo's alibi. It's revealed that Shogo was at a pharmacy at 6:30 PM, the estimated time of death. Conan also discovers that Shogo did not take leave on the day of the murder, meaning Shogo should not have been at Raisaku's house. Shogo did not inform the police about this alibi.",
+        "evidence": [
+          {
+            "type": "Pharmacy receipt",
+            "description": "confirming Shogo's presence at the pharmacy during the estimated time of death.",
+            "importance": 4
+          },
+          {
+            "type": "Employee testimonies",
+            "description": "confirming Shogo's presence at the company.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "incident": 5,
+        "location": "Raisaku Nakame's Living Room",
+        "description": "Conan investigates further and discovers that the coffee marks on the chair legs were far apart, suggesting the chair was moved. This implies that the criminal was present at the crime scene when the coffee spilled, contradicting the idea of an impossible locked-room scenario.",
+        "evidence": [
+          {
+            "type": "Coffee stains on chair legs",
+            "description": "indicating the chair was moved post-crime.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "incident": 7,
+        "location": "Raisaku Nakame's Living Room",
+        "description": "Conan uncovers the key trick. Shogo manipulated the scene to hide the presence of another person. Shogo combined the cakes on one plate and used the writing instrument as a pencil holder to disguise the additional cup as one used by Raisaku alone. Originally, there were two plates of cakes and two coffee cups.",
+        "evidence": [
+          {
+            "type": "Smell of coffee",
+            "description": "in the writing instrument holder.",
+            "importance": 3
+          },
+          {
+            "type": "Hidden fork",
+            "description": "in Shogo's jacket, used to manipulate evidence.",
+            "importance": 3
+          },
+          {
+            "type": "Two plates and two coffee cups",
+            "description": "indicating two people were present.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "incident": 8,
+        "location": "Detective Agency",
+        "description": "Conan reveals that Miiko Kuzumi is the real culprit. She poisoned Raisaku's coffee to protect Shogo from Raisaku's threats. After the crime, Miiko called Shogo to confess her love before committing suicide by jumping out the window. Shogo hid her body in his car trunk to protect her reputation.",
+        "evidence": []
+      }
+    ],
+    "suspects": [
+      {
+        "name": "Shogo Somei",
+        "alibi": "Pharmacy (confirmed by receipt)",
+        "motive": "None (initial suspect)",
+        "evidence": [
+          {
+            "type": "Soaked clothes",
+            "description": "indicating recent outdoor activity despite driving.",
+            "importance": 3
+          },
+          {
+            "type": "Support plate",
+            "description": "under the cup, suggesting post-crime manipulation.",
+            "importance": 4
+          },
+          {
+            "type": "Coffee marks on chair legs",
+            "description": "indicating the chair was moved.",
+            "importance": 3
+          },
+          {
+            "type": "Pharmacy receipt",
+            "description": "confirming Shogo's presence at the pharmacy during the estimated time of death.",
+            "importance": 4
+          },
+          {
+            "type": "Company records",
+            "description": "showing canceled meeting.",
+            "importance": 3
+          },
+          {
+            "type": "Employee testimonies",
+            "description": "confirming Shogo's presence at the company.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "name": "Miiko Kuzumi",
+        "alibi": "None (culprit)",
+        "motive": "Coercion and intimidation of Shogo",
+        "evidence": [
+          {
+            "type": "Phone call record",
+            "description": "from Miiko to Shogo before her suicide.",
+            "importance": 5
+          },
+          {
+            "type": "Miiko's body",
+            "description": "found in Shogo's car trunk.",
+            "importance": 5
+          },
+          {
+            "type": "Confession note",
+            "description": "from Miiko, explaining her actions.",
+            "importance": 5
+          }
+        ]
+      },
+      {
+        "name": "Raisaku Nakame",
+        "alibi": "None (victim)",
+        "motive": "None (victim)",
+        "evidence": []
+      }
+    ],
+    "crime_tricks": [
+      {
+        "crime": "Raisaku Nakame's Murder",
+        "method": "Miiko Kuzumi visited Raisaku with a poisoned cake and coffee. After serving them, she watched Raisaku consume the poison and locked the chain lock from inside. Immediately after, she jumped out of the window, committing suicide.",
+        "motive": "Miiko aimed to protect Shogo from Raisaku's coercion and threats.",
+        "evidence": [
+          {
+            "type": "Cyanide in coffee cup",
+            "description": "indicating poisoning.",
+            "importance": 5
+          },
+          {
+            "type": "Support plate",
+            "description": "under the cup, suggesting post-crime manipulation.",
+            "importance": 4
+          },
+          {
+            "type": "Coffee marks on chair legs",
+            "description": "indicating the chair was moved.",
+            "importance": 3
+          },
+          {
+            "type": "Two plates and two coffee cups",
+            "description": "indicating two people were present.",
+            "importance": 4
+          },
+          {
+            "type": "Smell of coffee",
+            "description": "in the writing instrument holder.",
+            "importance": 3
+          },
+          {
+            "type": "Hidden fork",
+            "description": "in Shogo's jacket, used to manipulate evidence.",
+            "importance": 3
+          }
+        ]
+      }
+    ],
+    "culprit": {
+        "name": "Miiko Kuzumi",
+        "age": 29,
+        "occupation": "Employee at Shogo's production company",
+        "motive": "Coercion and intimidation of Shogo",
+        "crimes": [
+        "Murder of Raisaku Nakame"
+        ]
+    }
+}  

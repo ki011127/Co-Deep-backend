@@ -7,18 +7,9 @@ import os
 import json
 
 class DetailController:
-    async def get_details_json(self, story, age):
-        ## story 는 data 폴더 안의 conan, sherlock 등을 의미
-        ver = 0
-        if age < 14:
-            ver = 1
-        elif age < 17:
-            ver = 2
-        else:
-            ver = 3
-        
+    async def get_details_json(self, story, level):
         ## Co-Deep-backend 에서 실행할 때는 아래의 경로를 사용
-        file_path = "data/" + story + "/detail/" + str(ver) + ".json"
+        file_path = "data/" + story + "/detail/" + str(level) + ".json"
         print(file_path)
         absolute_path = os.path.normpath(os.path.abspath(file_path)).strip()
         print(f"Reading file: {absolute_path}")
@@ -46,8 +37,8 @@ class DetailController:
         return details
     
 
-    async def put_detail(self, episode_id, user_id, age, story_name, order, created_at):
-        data = await self.get_details_json(story_name, age)
+    async def put_detail(self, episode_id, user_id, level, story_name, order, created_at):
+        data = await self.get_details_json(story_name, level)
         episode_details = [detail for detail in data["details"] if detail["espisode_id"] == episode_id]
         content = ""
         selection_id = []
@@ -90,3 +81,14 @@ class DetailController:
         return {
             "content": value
         }
+    
+    async def get_all_detail(self, episode_id):
+        print(episode_id)
+        details = await mongodb.db.details.find({"episode_id": episode_id},
+            {"_id": 1, "episode_id":1,"content": 1}
+        ).to_list(length=None)
+        print(details)
+        s = len(details)
+        for i in range(s):
+            details[i]["_id"] = str(details[i]["_id"])
+        return details

@@ -32,10 +32,9 @@ class Selection():
             You must create one selection that leads to the target detail's next detail story and is based on the target detail.
             You must create two selections that are out of the context of the story.
             The selection difference by age group(Most important part!!)
-                1. 5-9 years old: under 10 words of each selection, simple and easy to understand
-                2. 10-13 years old: over 10 under 15 words of each selection, simple and easy to understand
-                3. 14-16 years old: over 15 under 20 words of each selection, harder and more complex words and sentences
-                4. 17-19 years old: over 20 under 25 words of each selection, harder and more complex words and sentencess
+                1. 10-13 years old: over 10 under 15 words of each selection, simple and easy to understand
+                2. 14-16 years old: over 15 under 20 words of each selection, harder and more complex words and sentences
+                3. 17-19 years old: over 20 under 25 words of each selection, harder and more complex words and sentencess
             You must answer in English.
             Target Detail that selection should be made: {target_detail}
             Full Details: {full_details}

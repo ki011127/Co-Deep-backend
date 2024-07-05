@@ -2,4 +2,4 @@ from pydantic import BaseModel, Field
 
 class UserCreateRequest(BaseModel):
     name: str = Field(..., example="김기태", description = "사용자 이름")
-    age: int = Field(..., example=1, description="사용자 연령대")
+    level: int = Field(..., example=1, description="사용자 연령대")

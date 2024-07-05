@@ -22,3 +22,6 @@ class WrongDetailRequest(BaseModel):
 class DetailGetRequest(BaseModel):
     episode_id: str = Field(..., example="c831d225-8367-4383-98fc-2f07481dfba6", description="에피소드 id")
     user_id: str = Field(..., example="c831d225-8367-4383-98fc-2f07481dfba6", description="사용자 _id")
+
+class GetAllDetailRequest(BaseModel):
+    episode_id: str = Field(..., example="c831d225-8367-4383-98fc-2f07481dfba6", description="에피소드 id")

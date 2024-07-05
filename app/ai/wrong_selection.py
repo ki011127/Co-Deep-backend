@@ -48,5 +48,6 @@ if __name__ == "__main__":
     ## detail.py 에서 생성된 데이터
     content = "Inside the apartment, they found Raisaku lying on the floor. His coffee cup was next to him. It looked like he might have poisoned himself by drinking the coffee. Conan started to think about what could have happened."
     selection = "Leave the apartment and check the mailbox for any letters."
-    
+    #Wrong_Story = "Conan decided to leave the apartment and check the mailbox for any letters. To his surprise, he found an envelope addressed to Raisaku with no return address, hinting at a deeper mystery.
+
     wrongSelection.create_detail(selection, content)
