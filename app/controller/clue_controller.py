@@ -10,7 +10,7 @@ class ClueController:
             clue['_id'] = str(clue['_id'])
         if num_of_try == 1:
             if clue:
-                if clue['name']==name:
+                if clue['name'].lower()==name.lower():
                     return {"result": "success", "clue": clue}
                 else:
                     clue = {"detail_id" : clue['detail_id']}
@@ -19,7 +19,7 @@ class ClueController:
                 return clue
         elif num_of_try == 2:
             if clue:
-                if clue['name']==name:
+                if clue['name'].lower()==name.lower():
                     return {"result": "success", "clue": clue}
                 else:
                     return { "result": "wrong", "clue": clue}
