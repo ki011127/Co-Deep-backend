@@ -13,24 +13,20 @@ load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-class Detect():
+class Point():
     def __init__(self):
         self.client = OpenAI(api_key=OPENAI_API_KEY)
         self.messages = []
-    
-    async def init_model(self):
-        self.make_prompt()
-        return self.detect()
-    
-    async def chatting(self, record):
-        self.make_prompt()
-        self.append_chat_record(record)
-        return self.detect()
-    
-    def make_prompt(self):
-        prompt = f"""
-            You are a detective and you need to complete the reasoning process by asking the user questions based on the crime method.
 
+    def make_prompt(self, content):
+        prompt = f"""
+            You are a model who evaluates the score of an answer to a question.
+            The user will enter the question and answer to you together. Wait for the input.
+            Please rate the appropriateness of the answer to the question as 0-5 points.
+            Please evaluate the answer based on the given story.
+            The output should only output the score.
+
+            Story:
             the method of committing a crime
             The real killer was not Somei. Unlike Conan, a famous detective who starts off by implying the killer, this episode has a twist that the suspect who seemed to be the killer was not the real culprit. Both Conan and the police suspected Somei Shogo from the beginning, and he was the only suspect, and the true culprit was not even featured throughout the episode[3] and was not treated seriously.
 
@@ -47,21 +43,17 @@ class Detect():
             Then the question of where the fork was left remains, and Somei, who has been pretending that he is not the criminal until now, watches the whole situation and takes out the fork he hid in his jacket to reveal his crime. Conan, who already knows the truth, begins a reasoning by borrowing Kogoro's voice, saying that the criminal has fled to heaven.
 
 
-            The overall order of questions is as follows. You must follow this order.
-                1. Ask the criminal
-                2. Ask about the motive of the crime
-                3. Ask how to commit the crime
-
-            The crime method is a step-by-step questioning method. We need to complete the crime method by asking questions one by one based on clues.
-            If you don't get a proper answer to each question, give a little hint about it and help the user get it right.
-            When giving a hint, you should give an indirect hint, not a direct hint.
-            If you get the crime method right, print out that you caught the culprit and then quit.
-            There are a maximum of 7 questions about the method of committing the crime. (Excluding questions that give hints because user cannot be answered correctly.)
-            When ending, print '-the end-' at the end.
+            based on the score : 
+                5: when the answers are somewhat consistent based on the story.
+                0: Requesting hints, saying I don't know, answers that don't match the story.
         """
         self.messages = []
         self.messages.append({"role": "system", "content": prompt})
-    def detect(self):
+        self.messages.append({"role": "user", "content":content})
+
+    def point(self, content):
+        #content = "q : Who do you think is the real killer in this case?\na : maiko"
+        self.make_prompt(content)
         response = self.client.chat.completions.create(
             model="gpt-4o",
             messages=self.messages,
@@ -74,14 +66,8 @@ class Detect():
         #print(response.choices[0].message.content)
         return response.choices[0].message.content
     
-    def append_chat_record(self, record):
-        for i in range(0,len(record),2):
-            self.messages.append({"role": "assistant", "content": record[i]['chat']})
-            self.messages.append({"role":"user", "content": record[i+1]['chat']})
-        return
-    
     
     
 if __name__ == "__main__":
-    detect = Detect()
-    print(detect.detect())
+    point = Point()
+    print(point.point("1"))
