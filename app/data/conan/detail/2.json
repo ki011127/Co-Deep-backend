@@ -1,72 +1,76 @@
 {
     "details": [
         {
-            "espisode_id": "0",
-            "content": "Shogo Somei and Miako Kuzumi, representatives of a small outsourced production company, approached Detective Kogoro Mori with an intriguing proposal. They wanted to create a special program that would cover the daily life of detectives for 24 hours straight. At first, Mori seemed hesitant about the idea. However, when they mentioned that Yoko Okino, a famous celebrity, would be involved in the project, his interest piqued immediately. Mori had always been a fan of Yoko Okino, and her involvement was enough to secure his consent."
+            "episode_id": "6687e2172985e14d7b616665",
+            "content": "Kogoro Mori, a renowned detective, was approached by Shogo Somei and Miiko Kuzumi with an intriguing proposal. They wanted to create a special program that would follow detectives around the clock, showcasing their work and lives. Kogoro was initially hesitant but changed his mind when he learned that Yoko Okino, a famous celebrity, would be involved in the project. Her presence made the idea more appealing to him."
         },
         {
-            "espisode_id": "0",
-            "content": "Then, they introduced Yoko Okino, a famous singer who Mori admired. She explained how fun the show would be and how many people would watch it. Her words made Mori very excited about the project. He finally agreed to join the TV show with a big smile on his face."
+            "episode_id": "6687e2172985e14d7b616665",
+            "content": "During their discussion about the program, Ran, Kogoro's daughter, noticed something interesting. Both Shogo and Miiko were wearing identical watches. This small detail hinted at a close relationship between them, sparking Ran's curiosity. She wondered if there was more to their connection than just being colleagues."
         },
         {
-            "espisode_id": "0",
-            "content": "Shogo and Miako were very happy. They thanked Mori and promised to make the best TV show ever. With Yoko's help, they knew it would be a great success. Detective Mori couldn't wait to start this new adventure!"
+            "episode_id": "6687e2982985e14d7b616666",
+            "content": "On a rainy day, Kogoro, Conan, and Ran went to producer Raisaku Nakame's apartment for an important meeting. The rain was pouring heavily, making the streets slippery and visibility poor. Shogo arrived late, drenched despite having driven there, which seemed odd to everyone. They were all worried about Raisaku because he had been involved in a recent scandal that made headlines."
         },
         {
-            "espisode_id": "1",
-            "content": "On a rainy day, Somei, Conan, Ran, and Kogoro went to producer Raisaku Nakame's apartment for a meeting. The rain was pouring down hard. Somei arrived late and was soaked from the rain even though he drove there. Everyone wondered why he was so wet."
+            "episode_id": "6687e2982985e14d7b616666",
+            "content": "Their concern grew when Raisaku didn't answer the door. After knocking several times with no response, they decided to break into the apartment. Inside, they found Raisaku lying on the floor, lifeless. The room was eerily quiet except for the sound of rain hitting the windows. It was clear that something terrible had happened, and they knew they had to find out who was responsible for this tragic event."
         },
         {
-            "espisode_id": "1",
-            "content": "Inside the apartment, they found Raisaku lying on the floor. His coffee cup was next to him. It looked like he might have poisoned himself by drinking the coffee. Conan started to think about what could have happened.",
-            "selection_id": ["668593d7c0f02cff7faece21", "668593d7c0f02cff7fa2ce21", "668592d7c0f02cff7fa2ce21"]
+            "episode_id": "6687e2bc2985e14d7b616667",
+            "content": "Raisaku Nakame was found lifeless in his living room, with a spilled cup of coffee nearby. At first glance, it seemed like a tragic suicide. The authorities quickly concluded that Raisaku had poisoned himself with cyanide. However, Conan, the young detective, wasn't convinced by this simple explanation."
         },
         {
-            "espisode_id": "1",
-            "content": "Conan noticed something strange about the coffee cup and saucer. They were placed very neatly on the table. It seemed like someone put them there on purpose to trick people."
+            "episode_id": "6687e2bc2985e14d7b616667",
+            "content": "As Conan examined the scene more closely, he noticed something unusual about the coffee cup. It was placed on a support plate under the table, which seemed odd for someone committing suicide. This detail suggested that someone had tampered with the evidence after Raisaku's death. Conan knew this could not be ignored and decided to investigate further."
         },
         {
-            "espisode_id": "1",
-            "content": "He told Ran and Kogoro about his thoughts. They all agreed that it didn't look like Raisaku had poisoned himself. They decided to investigate more to find out the truth behind Raisaku's death."
+            "episode_id": "6687e2bc2985e14d7b616667",
+            "content": "While looking around the room, Conan spotted coffee marks on the legs of a chair. These marks were far apart from each other, indicating that the chair had been moved recently. This clue was crucial because it showed that someone had rearranged the scene to make it look like a suicide. With these things, Conan began to piece together the truth behind Raisaku's mysterious death."
         },
         {
-            "espisode_id": "2",
-            "content": "The police began their investigation. They thought it might be a murder made to look like a suicide. Somei became a suspect because he had no alibi. He also seemed to know too much about the scene. But there was a witness to prove his alibi.",
-            "selection_id": ["662592d7c0f02cff7fa2ce21", "628592d7c0f02cff7fa2ce21", "528592d7c0f02cff7fa2ce21"]
+            "episode_id": "6687e2df2985e14d7b616668",
+            "content": "Conan had a strong feeling that Shogo might be the culprit. He decided to dig deeper into Shogo's alibi. Conan called the local pharmacy where Shogo claimed he was during the time of the murder."
         },
         {
-            "espisode_id": "2",
-            "content": "Conan decided to interview witnesses. He found out that Somei was seen at a pharmacy during the time of the crime. This was important information. It could help prove if Somei was innocent or guilty."
+            "episode_id": "6687e2df2985e14d7b616668",
+            "content": "The pharmacist confirmed that Shogo was indeed at the pharmacy at 6:30 PM, which was around the estimated time of death. This testimony made things more complicated. If Shogo was at the pharmacy, how could he have been at Raisaku's house committing the crime?"
         },
         {
-            "espisode_id": "2",
-            "content": "A pharmacist gave a testimony. The pharmacist said Somei was at the pharmacy when the crime happened. This made things confusing. Somei's actions and statements did not match this alibi. Conan needed to find out the truth."
+            "episode_id": "6687e2df2985e14d7b616668",
+            "content": "Moreover, it was discovered that Shogo did not take leave from work on the day of the murder. This meant he should have been at his workplace and not anywhere near Raisaku's house. Despite having such a strong alibi, Shogo never mentioned this to the police, raising further suspicions."
         },
         {
-            "espisode_id": "3",
-            "content": "Conan looked around the room carefully. He saw a fork and a cake plate on the table. This made him think that someone else was with Raisaku before he died. It didn't look like a simple suicide anymore.",
-            "selection_id": ["662299d7c0f02cff7fa2ce21", "528597d7c0f02cff7fa3ce21", "661593d7c0f02cff7fa2ce21"]
+            "episode_id": "6687e2df2985e14d7b616668",
+            "content": "Conan knew that there must be more to this story. Why would Shogo hide such an important piece of information? Was he trying to protect someone or was there another reason behind his silence? The mystery deepened as Conan continued his investigation, determined to uncover the truth."
         },
         {
-            "espisode_id": "3",
-            "content": "Then, Conan found two coffee cups and plates on another table. This showed that two people were present in the room. Additionally, Conan thought that somei might have evidence of the case.",
-            "selection_id": ["662292d7c0f02cff7fa2ce21", "528592d7c0f02cff7fa3ce21", "521592d7c0f02cff7fa3ce21"]
+            "episode_id": "6687e3092985e14d7b616669",
+            "content": "Conan stood in the dimly lit room, carefully examining the scene. The crime seemed straightforward at first glance, but something felt off. He noticed a single plate with several cakes and one coffee cup on the table. Conan knew there had to be more to this setup."
         },
         {
-            "espisode_id": "3",
-            "content": "Next, Conan checked Somei's jacket. He found a hidden fork inside it. Now, Conan was sure that Raisaku did not die alone."
+            "episode_id": "6687e3092985e14d7b616669",
+            "content": "After a thorough investigation, Conan discovered a crucial piece of evidence: a writing instrument holder that smelled faintly of coffee. This holder was cleverly used by Shogo to disguise an additional cup as if it belonged solely to Raisaku. It was clear that Shogo had gone to great lengths to manipulate the scene."
         },
         {
-            "espisode_id": "4",
-            "content": "Conan used his sharp detective skills to find out the truth. He discovered that Miako Kuzumi was the real culprit behind Raisaku's death. She had poisoned Raisaku because he was threatening Somei. Miako wanted to protect Somei from these threats."
+            "episode_id": "6687e3092985e14d7b616669",
+            "content": "A fork tucked away in Shogo's jacket. This fork had been used to rearrange the cakes on one plate, making it appear as though only one person had been eating."
         },
         {
-            "espisode_id": "4",
-            "content": "After poisoning Raisaku, Miako felt very guilty and decided to take her own life. She thought this was the only way to keep Somei safe. When Somei found out what Miako had done, he tried to cover it up. He wanted to protect Miako's reputation and didn't want anyone to know the truth."
+            "episode_id": "6687e3092985e14d7b616669",
+            "content": "Additionally, Conan found two plates and two coffee cups, indicating that two people were present during the incident. With these pieces of evidence, Conan pieced together how Shogo had orchestrated the deception and uncovered the truth behind the crime."
         },
         {
-            "espisode_id": "4",
-            "content": "In the end, Conan revealed everything. He explained how Miako had acted out of love and fear for Somei. Even though her actions were wrong, she believed she was doing the right thing to protect someone she cared about deeply."
+            "episode_id": "6687e32e2985e14d7b61666a",
+            "content": "Conan finally uncovered the truth. Miiko Kuzumi was the real culprit behind Raisaku's death. She had poisoned his coffee because Raisaku had been threatening Shogo, and she wanted to protect him."
+        },
+        {
+            "episode_id": "6687e32e2985e14d7b61666a",
+            "content": "After committing the crime, Miiko felt overwhelmed with guilt and decided to call Shogo. During this call, she confessed her love for him, knowing it might be her last chance."
+        },
+        {
+            "episode_id": "6687e32e2985e14d7b61666a",
+            "content": "Tragically, after the confession, Miiko jumped out of the window, ending her life. Shogo, devastated by her actions but wanting to preserve her dignity, hid her body in his car trunk. He hoped that by doing so, he could protect her reputation from being tarnished by the scandal."
         }
     ]
 }

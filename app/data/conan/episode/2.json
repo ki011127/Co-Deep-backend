@@ -3,82 +3,73 @@
     {
       "episode": 1,
       "title": "Meeting with Detective Mori",
-      "description": "Shogo Somei and Miako Kuzumi, representatives of a small outsourced production company, approach Detective Kogoro Mori about a special program that covers detectives 24 hours a day. They manage to get Mori's consent by involving Yoko Okino, a famous celebrity. The meeting seems straightforward, but Conan feels something is off."
+      "description": "Kogoro Mori, a famous detective, is approached by Shogo Somei and Miiko Kuzumi. They propose a special program that covers detectives 24 hours a day. Kogoro agrees to participate due to the involvement of Yoko Okino, a popular celebrity. During the discussion, Ran notices the matching watches worn by Shogo and Miiko, hinting at their close relationship."
     },
     {
       "episode": 2,
       "title": "Incident at Raisaku's Apartment",
-      "description": "On a rainy day, Somei, Conan, Ran, and Kogoro arrive at producer Raisaku Nakame's apartment for a meeting. Somei is noticeably late and soaked from the rain despite driving. They find Raisaku dead from cyanide poisoning in his coffee, with the scene staged to suggest suicide.",
+      "description": "On a rainy day, Kogoro, Conan, and Ran visit producer Raisaku Nakame's apartment for a meeting. Shogo arrives late, soaked despite having driven there. Concerned about Raisaku's recent scandal, they break into the apartment and find Raisaku dead."
+    },
+    {
+      "episode": 3,
+      "title": "Incident at Raisaku Nakame's Living Room",
+      "description": "Raisaku is found dead from cyanide poisoning. The scene includes a spilled cup of coffee and signs suggesting suicide. However, Conan discovers that the coffee cup was intentionally placed on a support plate later, indicating evidence manipulation. He also finds coffee marks on the chair legs far apart, suggesting the chair was moved.",
       "evidence_collected": [
         {
-          "type": "Coffee cup and saucer",
-          "description": "placed deliberately to mislead investigators.",
+          "type": "Cyanide in coffee cup",
+          "description": "indicating poisoning.",
+          "importance": 3
+        },
+        {
+          "type": "Support plate",
+          "description": "under the cup, suggesting post-crime manipulation.",
+          "importance": 4
+        },
+        {
+          "type": "Coffee marks on chair legs",
+          "description": "indicating the chair was moved.",
           "importance": 4
         }
       ]
     },
     {
-      "episode": 3,
-      "title": "Initial Investigation",
-      "description": "The police begin their investigation, explaining that the scene's setup could imply a murder staged as suicide. They suspect Somei due to his lack of alibi and evidence manipulation."
-    },
-    {
       "episode": 4,
-      "title": "Further Examination",
-      "description": "During a closer examination, Conan notices that the placement of the fork and cake plate suggests the presence of another person. This complicates the initial theory of suicide.",
+      "title": "doubt about Shogo",
+      "description": "Shogo is suspected to be the culprit. Conan calls the pharmacy to confirm Shogo's alibi. It's revealed that Shogo was at the pharmacy at 6:30 PM, the estimated time of death. Additionally, Shogo did not take leave on the day of the murder, meaning he should not have been at Raisaku's house. Shogo did not inform the police about this alibi.",
       "evidence_collected": [
         {
-          "type": "Fork and cake plate",
-          "description": "suggesting the presence of another person.",
-          "importance": 2
+          "type": "Pharmacy testimony",
+          "description": "confirming Shogo's presence at the pharmacy during the estimated time of death.",
+          "importance": 4
         }
       ]
     },
     {
       "episode": 5,
-      "title": "Crime Scene Analysis",
-      "description": "Conan discovers additional coffee marks on the chair, indicating the criminal was present when the coffee was spilled. This points to an impossible crime since the apartment was locked from inside.",
+      "title": "deep observation of the scene",
+      "description": "Conan uncovers the key trick used by Shogo to manipulate the crime scene. Shogo combined cakes on one plate and used a writing instrument holder to disguise an additional cup as one used by Raisaku alone. Originally, there were two plates of cakes and two coffee cups.",
       "evidence_collected": [
         {
-          "type": "Coffee marks on chair legs",
-          "description": "suggesting movement after coffee spilled.",
+          "type": "a writing instrument holder",
+          "description": "smell of coffee.",
+          "importance": 4
+        },
+        {
+          "type": "Hidden fork",
+          "description": "in Shogo's jacket, used to manipulate evidence.",
+          "importance": 3
+        },
+        {
+          "type": "Two plates and two coffee cups",
+          "description": "indicating two people were present.",
           "importance": 4
         }
       ]
     },
     {
       "episode": 6,
-      "title": "Interviews and Discoveries",
-      "description": "Conan interviews witnesses and finds that Somei was seen at a pharmacy during the time of the crime. This alibi seems to conflict with Somei's actions and statements.",
-      "evidence_collected": [
-        {
-          "type": "Testimony from pharmacist",
-          "description": "placing Somei at the pharmacy at the time of crime.",
-          "importance": 3
-        }
-      ]
-    },
-    {
-      "episode": 7,
-      "title": "Revealing the True Sequence",
-      "description": "Conan notices something strange during a closer examination. The fork and cake plate suggest someone else was there with Raisaku before he died. This makes it clear that it wasn't just a simple suicide.",
-      "evidence_collected": [
-        {
-          "type": "Two coffee cups and plates",
-          "description": "indicating two people were present.",
-          "importance": 4
-        },
-        {
-          "type": "Fork hidden in Somei's jacket",
-          "description": "revealed by Conan as the missing piece of evidence.",
-          "importance": 4
-        }
-      ]
-    },
-    {
-      "episode": 8,
-      "title": "The Culprit Revealed",
-      "description": "Conan, using Kogoro's voice, reveals the true sequence of events. He uncovers that the real culprit was Miako Kuzumi, who poisoned Raisaku and then committed suicide by jumping from the balcony. Somei manipulated the evidence to protect her reputation."
+      "title": "detection of the criminal",
+      "description": "Conan reveals that Miiko Kuzumi is the real culprit. She poisoned Raisaku's coffee to protect Shogo from Raisaku's threats. After committing the crime, Miiko called Shogo to confess her love before jumping out of the window. Shogo hid her body in his car trunk to protect her reputation."
     }
   ],
   "culprit_details": {

@@ -21,7 +21,7 @@
       {
         "incident": 3,
         "location": "Raisaku Nakame's Living Room",
-        "description": "Raisaku Nakame is found dead from cyanide poisoning. The scene includes a spilled cup of coffee, a fork, a plate of cake, and signs of poisoning suicide. The police are unsure if it was suicide or murder. Conan finds that the coffee cup was intentionally placed on a support plate later, indicating evidence manipulation.",
+        "description": "Raisaku Nakame is found dead from cyanide poisoning. The scene includes a spilled cup of coffee, a fork, a plate of cake, and signs of poisoning suicide. The police are unsure if it was suicide or murder. Conan finds that the coffee cup was intentionally placed on a support plate later, indicating evidence manipulation. Conan investigates further and discovers that the coffee marks on the chair legs were far apart, suggesting the chair was moved. This implies that the criminal was present at the crime scene when the coffee spilled, contradicting the idea of an impossible locked-room scenario.",
         "evidence": [
           {
             "type": "Cyanide in coffee cup",
@@ -60,18 +60,6 @@
       {
         "incident": 5,
         "location": "Raisaku Nakame's Living Room",
-        "description": "Conan investigates further and discovers that the coffee marks on the chair legs were far apart, suggesting the chair was moved. This implies that the criminal was present at the crime scene when the coffee spilled, contradicting the idea of an impossible locked-room scenario.",
-        "evidence": [
-          {
-            "type": "Coffee stains on chair legs",
-            "description": "indicating the chair was moved post-crime.",
-            "importance": 3
-          }
-        ]
-      },
-      {
-        "incident": 7,
-        "location": "Raisaku Nakame's Living Room",
         "description": "Conan uncovers the key trick. Shogo manipulated the scene to hide the presence of another person. Shogo combined the cakes on one plate and used the writing instrument as a pencil holder to disguise the additional cup as one used by Raisaku alone. Originally, there were two plates of cakes and two coffee cups.",
         "evidence": [
           {
@@ -92,7 +80,7 @@
         ]
       },
       {
-        "incident": 8,
+        "incident": 6,
         "location": "Detective Agency",
         "description": "Conan reveals that Miiko Kuzumi is the real culprit. She poisoned Raisaku's coffee to protect Shogo from Raisaku's threats. After the crime, Miiko called Shogo to confess her love before committing suicide by jumping out the window. Shogo hid her body in his car trunk to protect her reputation.",
         "evidence": []
@@ -120,7 +108,7 @@
             "importance": 3
           },
           {
-            "type": "Pharmacy receipt",
+            "type": "Pharmacy testimonies",
             "description": "confirming Shogo's presence at the pharmacy during the estimated time of death.",
             "importance": 4
           },
@@ -140,23 +128,7 @@
         "name": "Miiko Kuzumi",
         "alibi": "None (culprit)",
         "motive": "Coercion and intimidation of Shogo",
-        "evidence": [
-          {
-            "type": "Phone call record",
-            "description": "from Miiko to Shogo before her suicide.",
-            "importance": 5
-          },
-          {
-            "type": "Miiko's body",
-            "description": "found in Shogo's car trunk.",
-            "importance": 5
-          },
-          {
-            "type": "Confession note",
-            "description": "from Miiko, explaining her actions.",
-            "importance": 5
-          }
-        ]
+        "evidence": []
       },
       {
         "name": "Raisaku Nakame",

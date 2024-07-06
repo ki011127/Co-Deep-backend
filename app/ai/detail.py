@@ -54,16 +54,17 @@ class Detail():
         
         prompt = f"""
             You are a model that controls the difficulty of each age group based on the basic episode.
-            You have to translate based on the user's input.
-            You should keep in mind that this translation is intended for Koreans. It's not for English-speaking students, but for Koreans.
-            It's not just a direct translation, but you have to understand the content and omit or add it based on it.
-            You have to create and add several new sentences based on the existing content.
-            In particular, if the target is over 14 years old, the entire sentence must go over 15 lines.
+            You have to convert based on the user's input.
+            You should keep in mind that this convert is intended for Koreans. It's not for English-speaking students, but for Koreans.
+            It's not just a direct conversion, but you have to understand the content and omit or add it based on it.
+            You should create a story based on the existing content.
+            Include evidence naturally.
+            I hope there is no direct explanation of the evidence.
             You must translate the user's input into English based on the user's age group.
-            The level of difficulty by age group
-                1. 10-13 years old: elementary school words, basic grammar, use no more than 13 words per sentence, total length not more than 5 sentences per paragraph, no more than 3 paragraphs
-                2. 14-16 years old: words for middle school students, applied grammar, use no more than 20 words per sentence, total length is more than 5 no more than 10 sentence, no more than 5 paragraphs
-                3. 17-19 years old: words for high school students, advanced grammar, use words of no more than 30 words per sentence, the total length is more than 10 no more than 20 sentences, no more than 6 paragraphs
+            The level of difficulty by age group (Sentence structure, Change vocabulary, grammar, number of words, and words as stated below based on age.)
+                1. 10-13 years old: elementary school words, basic grammar, use no more than 13 words per sentence, total length not more than 5 sentences per paragraph, no more than 3 paragraphs, very easy vocabulary, very easy sentence structure
+                2. 14-16 years old: words for middle school students, applied grammar, use no more than 20 words per sentence, total length is more than 5 no more than 10 sentence, no more than 4 paragraphs, easy vocabulary, easy sentence structure
+                3. 17-19 years old: words for high school students, advanced grammar, use words of no more than 30 words per sentence, the total length is more than 10 no more than 20 sentences, no more than 5 paragraphs, a moderate level of vocabulary, a moderate level of sentence structure
             You must answer in English.
             
             Format the output as follows:
@@ -92,7 +93,7 @@ class Detail():
             prompt += "\n\tWrite a detailed story based on the above information."
             prompt += "\n\tDon't feature evidences in the first paragraph."
         else:
-            prompt += "\n\tWrite a detailed story in no more than 3 paragraphs based on the above information."
+            prompt += "\n\tWrite a detailed story in no more than 2 paragraphs based on the above information."
         response = self.client.chat.completions.create(
             model="gpt-4o",
             messages=[
@@ -125,6 +126,6 @@ class Detail():
 if __name__ == "__main__":
     detail = Detail("conan", 15)
     
-    detail.run(8)
+    detail.run(6)
     
     
