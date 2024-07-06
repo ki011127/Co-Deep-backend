@@ -28,7 +28,7 @@ async def get_all_chat(detect: AllDetectChatRequest):
         return { "result": "fail" }
     
 @router.post("/remove_all_chat",\
-    description="모든 채팅 가져오기")
+    description="채팅 삭제")
 async def remove_all_chat(detect: AllDetectChatRequest):
     chattings = await detect_controller.remove_all_chat(detect.story_id,detect.name, detect.level)
     if chattings:

@@ -41,5 +41,5 @@ class PointController:
         return total_point
     
     async def remove_point(self, story_id, name, level):
-        result = await mongodb.db.points.delete_many({"story_id": story_id, "level": level, "name": name, "is_detect":1})
+        result = await mongodb.db.points.delete_many({"story_id": story_id, "level": level, "name": name})
         return result

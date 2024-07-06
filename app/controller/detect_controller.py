@@ -52,7 +52,13 @@ class DetectController:
         print(res)
         
         result = await mongodb.db.chattings.insert_one(document)
+        if "-the end-" in res:
+            return {
+                "is_end": 1,
+                "content": res
+            }
         return {
+            "is_end": 0,
             "content": res
         }
     
