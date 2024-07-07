@@ -73,7 +73,7 @@ class StatController:
             )
         return user_doc
     
-    async def ep1_start(self, name):
+    async def get_stat(self, name):
         user_doc = await mongodb.db.stats.find_one({"name": name})
         user_doc['_id'] = str(user_doc['_id'])
         return user_doc

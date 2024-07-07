@@ -29,8 +29,8 @@ async def update_stat(stat: UpdateStatRequest):
     
 @router.get("/get_stat/{name}",\
     description="추론 페이지 끝나면 stat update를 위해 호출")
-async def update_stat(name):
-    stat = await stat_controller.update_stat(name)
+async def get_stat(name):
+    stat = await stat_controller.get_stat(name)
     if stat:
         return { "result": "success", "stat":stat}
     else:
