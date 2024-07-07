@@ -8,7 +8,7 @@ import os
 import json
 
 class DetectController:
-    async def create_chat(self, story_id, name, level, input, created_at):
+    async def create_chat(self, story_id, name, level, input, created_at, point):
         detect_model = Detect()
         result = await mongodb.db.chattings.find({"story_id":story_id, "name":name, "level":level}).sort("created_at", 1).to_list(length=None)
         res = ""
@@ -22,7 +22,8 @@ class DetectController:
                 "created_at": created_at,
                 "is_init": 0,
                 "is_user": 1,
-                "chat": input
+                "chat": input,
+                "point": point
             }
             await mongodb.db.chattings.insert_one(document)
             result.append(document)

@@ -12,7 +12,7 @@ router = APIRouter(
 @router.post("/create_chat",\
     description="채팅 생성")
 async def create_chat(detect: DetectChatRequest):
-    chatting = await detect_controller.create_chat(detect.story_id,detect.name, detect.level, detect.input, detect.created_at)
+    chatting = await detect_controller.create_chat(detect.story_id,detect.name, detect.level, detect.input, detect.created_at, detect.point)
     if chatting:
         return {"result": "success", "chatting": chatting}
     else:

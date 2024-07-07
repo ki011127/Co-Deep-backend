@@ -16,6 +16,7 @@ class DetectChatRequest(BaseModel):
     level: int = Field(..., example=1, description="난이도")
     input: Optional[str] = Field(None, example="maiko", description="사용자 입력")
     created_at: Optional[datetime] = Field(default_factory=lambda: datetime.now(ZoneInfo("Asia/Seoul")))
+    point: Optional[int] = Field(..., example=1, description="답변 점수")
 
 class AllDetectChatRequest(BaseModel):
     story_id: str = Field(..., example="667d499079e8f1760cd861f4", description="스토리 id")
