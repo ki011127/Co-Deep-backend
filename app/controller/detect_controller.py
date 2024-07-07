@@ -64,7 +64,7 @@ class DetectController:
         }
     
     async def get_all_chat(self, story_id, name, level):
-        result = await mongodb.db.chattings.find({"story_id":story_id, "name":name, "level":level},{"_id":0, "is_user":1, "chat":1}).sort("created_at", 1).to_list(length=None)
+        result = await mongodb.db.chattings.find({"story_id":story_id, "name":name, "level":level},{"_id":0, "is_user":1, "chat":1, "point":1}).sort("created_at", 1).to_list(length=None)
         print(result)
         return result
     
