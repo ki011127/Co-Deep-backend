@@ -5,3 +5,8 @@ class ClueCheckRequest(BaseModel):
     name: str = Field(..., example="testimony", description="단서 이름")
     num_of_try: int = Field(..., example=1, description="시도 횟수")
     order: int = Field(..., example=1, description="단서 순서")
+
+class UserClueRequest(BaseModel):
+    story_id: str = Field(..., example="667d499079e8f1760cd861f4", description="스토리 id")
+    name: str = Field(..., example="kitae", description="사용자 이름")
+    level: int = Field(..., example=1, description="난이도")

@@ -27,3 +27,7 @@ class ClueController:
                 return clue
         
         return clue
+    
+    async def get_user_clues(self, story_id, name, level):
+        clue_list = await mongodb.db.points.find({"story_id": story_id, "level": level, "name": name, "is_detect":0},{"_id": 0, "point": 1, "clue":1}).to_list(length=None)
+        return clue_list

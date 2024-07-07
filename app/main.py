@@ -24,6 +24,7 @@ app.include_router(selections.router)
 app.include_router(scripts.router)
 app.include_router(detects.router)
 app.include_router(points.router)
+#app.include_router(stats.router)
 
 @app.on_event("startup")
 def on_app_start():
