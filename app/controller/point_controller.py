@@ -30,7 +30,7 @@ class PointController:
         if points:
             points_list = [doc["point"] for doc in points]
             total_point = sum(points_list)
-        return total_point
+        return {"total_point":total_point, "point":int(res)}
     
     async def all_detect_point(self, story_id, name, level):
         points = await mongodb.db.points.find({"story_id": story_id, "level": level, "name": name, "is_detect":1},{"_id": 0, "point": 1}).to_list(length=None)

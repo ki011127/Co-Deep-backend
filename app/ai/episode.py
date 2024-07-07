@@ -66,7 +66,7 @@ class Episode():
             The episode difference by age group(Most important part!!)
                 1. 10-13 years old: 4~5 episodes, intuitive, important, criminal evidence, importance of 4 points or higher evidence, light and fun materials, no cruel or dangerous materials
                 2. 14-16 years old: 6~7 episodes, confusing and hard-to-find evidence, importance of 2 points or higher evidence, a story based on the original story, cruel and dangerous material is not direct, but indirectly labeled
-                3. 17-19 years old: 8~9 episodes, more confusing and hard-to-find, importance of 1 points or higher evidence, difficult evidence, a story based on the original story, cruel and dangerous materials is allowed
+                3. 17-19 years old: 7~9 episodes, more confusing and hard-to-find, importance of 1 points or higher evidence, difficult evidence, a story based on the original story, cruel and dangerous materials is allowed
             You must answer in English.
             User's age: {age}
             
@@ -171,5 +171,5 @@ class Episode():
     
 if __name__ == "__main__":
     episode = Episode()
-    print(episode.make_episode(15))
+    print(episode.make_episode(19))
     
