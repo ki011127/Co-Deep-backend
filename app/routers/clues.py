@@ -20,7 +20,7 @@ async def check_clue(clue: ClueCheckRequest):
     
 
 @router.post("/get_user_clues",\
-    description="단서 정보 반환")
+    description="유저 단서 리스트 반환")
 async def get_user_clues(clue: UserClueRequest):
     clue = await clue_controller.get_user_clues(clue.story_id, clue.name, clue.level)
     if clue:
