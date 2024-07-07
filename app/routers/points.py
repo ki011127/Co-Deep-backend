@@ -42,7 +42,7 @@ async def remove_point(point: AllDetectPointRequest):
 @router.post("/add_clue_point",\
     description="단서 점수 추가")
 async def add_clue_point(point: AddCluePointRequest):
-    point = await point_controller.add_clue_point(point.story_id,point.name, point.level, point.episode_id, point.is_hint, point.num_of_try, point.clue_order)
+    point = await point_controller.add_clue_point(point.story_id,point.name, point.level, point.episode_id, point.is_hint, point.clue_order)
     if point>=0:
         return {"result": "success", "point": point}
     else:

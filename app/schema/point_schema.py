@@ -22,7 +22,6 @@ class AddCluePointRequest(BaseModel):
     level: int = Field(..., example=1, description="난이도")
     episode_id: str = Field(..., example="667d499079e8f1760cd861f4", description="에피소드 id")
     is_hint: int = Field(..., example=1, description="0:힌트 사용x, 1:힌트 사용 O, 2: 정답 보기를 한 경우")
-    num_of_try: int = Field(..., example=1, description="try 횟수")
     clue_order: int = Field(..., example=1, description="에피 별 단서 순서")
 
 class EpisodePointRequest(BaseModel):

@@ -44,35 +44,23 @@ class PointController:
         result = await mongodb.db.points.delete_many({"story_id": story_id, "level": level, "name": name})
         return result
     
-    async def add_clue_point(self, story_id, name, level, episode_id, is_hint, num_of_try, clue_order):
+    async def add_clue_point(self, story_id, name, level, episode_id, is_hint, clue_order):
         clue = await mongodb.db.clues.find_one({"episode_id": episode_id, "order":clue_order})
         print(clue)
         clue['_id'] = str(clue['_id'])
         document = {}
         point = -1
         if is_hint == 0:
-            if num_of_try == 1:
-                document = {
-                    "story_id": story_id,
-                    "level": level,
-                    "name": name,
-                    "episode_id": episode_id,
-                    "point": 3,
-                    "is_detect": 0,
-                    "clue": clue
-                }
-                point = 3
-            else:
-                document = {
-                    "story_id": story_id,
-                    "level": level,
-                    "name": name,
-                    "episode_id": episode_id,
-                    "point": 2,
-                    "is_detect": 0,
-                    "clue": clue
-                }
-                point = 2
+            document = {
+                "story_id": story_id,
+                "level": level,
+                "name": name,
+                "episode_id": episode_id,
+                "point": 3,
+                "is_detect": 0,
+                "clue": clue
+            }
+            point = 3
         elif is_hint == 1:
             document = {
                 "story_id": story_id,
