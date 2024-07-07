@@ -2,7 +2,7 @@ import os
 from typing import Optional
 from fastapi import FastAPI
 from models import mongodb
-from routers import users, stories, episodes, details, clues, selections, scripts, detects, points
+from routers import users, stories, episodes, details, clues, selections, scripts, detects, points, stats
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI() # FastAPI 모듈
@@ -24,7 +24,7 @@ app.include_router(selections.router)
 app.include_router(scripts.router)
 app.include_router(detects.router)
 app.include_router(points.router)
-#app.include_router(stats.router)
+app.include_router(stats.router)
 
 @app.on_event("startup")
 def on_app_start():

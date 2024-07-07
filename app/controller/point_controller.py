@@ -107,7 +107,7 @@ class PointController:
     
     async def all_clue_point(self, story_id, name, level):
         total_sum = -1
-        points_cursor = await mongodb.db.points.find({"story_id": story_id, "name": name, "level": level},{"_id": 0, "point": 1}).to_list(length=None)
+        points_cursor = await mongodb.db.points.find({"story_id": story_id, "name": name, "level": level, "is_detect": 0},{"_id": 0, "point": 1}).to_list(length=None)
         points = [doc["point"] for doc in points_cursor]
         total_sum = sum(points)
         return total_sum
