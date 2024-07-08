@@ -39,19 +39,19 @@ class StatController:
             if created_at.tzinfo is None:
                 created_at = pytz.utc.localize(created_at)
             time_difference = current_time - created_at
+            # existing_detect_time = user_doc['detect_time']
+            # hours, minutes = map(int, existing_detect_time.split(":"))
+            # existing_detect_timedelta = timedelta(hours=hours, minutes=minutes)
 
-            existing_detect_time = user_doc['detect_time']
-            hours, minutes = map(int, existing_detect_time.split(":"))
-            existing_detect_timedelta = timedelta(hours=hours, minutes=minutes)
-
-            # 새로 계산한 시간 차이와 기존 detect_time을 더함
-            total_detect_timedelta = existing_detect_timedelta + time_difference
+            # # 새로 계산한 시간 차이와 기존 detect_time을 더함
+            # total_detect_timedelta = existing_detect_timedelta + time_difference
 
             # 시간 차이를 hh:mm 형식으로 변환
-            total_seconds = total_detect_timedelta.total_seconds()
-            hours, remainder = divmod(total_seconds, 3600)
-            minutes = remainder // 60
-            formatted_time = f"{int(hours):02d}:{int(minutes):02d}"
+            total_seconds = time_difference.total_seconds()
+            print(total_seconds)
+            minutes, remainder = divmod(total_seconds, 60)
+            seconds = int(remainder)
+            formatted_time = f"{int(minutes):02d}:{int(seconds):02d}"
 
             # 기존 detect_point를 가져와 새롭게 계산한 detect_point와 더함
             existing_detect_point = user_doc['detect_point']
