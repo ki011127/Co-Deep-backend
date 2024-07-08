@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 class StoryController:    
     async def get_story(self, level):
         # existing_user = await mongodb.engine.find_one(Users, Users.uuid == uuid)
-        stories = await mongodb.db.stories.find({}, {"_id": 1, "title": 1, "description": 1, "subtitle": 1}).to_list(length=None)
+        stories = await mongodb.db.stories.find({}, {"_id": 1, "title": 1, "description": 1, "subtitle": 1, "img": 1}).to_list(length=None)
         for i in range(len(stories)):
             print(stories[i]["_id"])
             first_ep = await mongodb.db.episodes.find({"story_id": str(stories[i]['_id']), "order": 1, "level": level}).to_list(length=None)

@@ -51,7 +51,13 @@ class Detect():
                 1. Ask the criminal
                 2. Ask about the motive of the crime
                 3. Ask how to commit the crime
-
+            
+            output format
+                1. If you ask a question
+                    Question 1 : ~~
+                2. If you give a hint
+                    Hint : ~~
+            
             The crime method is a step-by-step questioning method. We need to complete the crime method by asking questions one by one based on clues.
             If you don't get a proper answer to each question, give a little hint about it and help the user get it right.
             When giving a hint, you should give an indirect hint, not a direct hint.
@@ -84,4 +90,4 @@ class Detect():
     
 if __name__ == "__main__":
     detect = Detect()
-    print(detect.detect())
+    print(detect.init_model())

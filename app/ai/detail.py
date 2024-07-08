@@ -124,8 +124,8 @@ class Detail():
                 return f"Episode {episode['episode']}: {episode['title']}\n\n{story}\n\n{'='*50}\n"
     
 if __name__ == "__main__":
-    detail = Detail("conan", 15)
+    detail = Detail("conan", 17)
     
-    detail.run(6)
+    detail.run(7)
     
     
