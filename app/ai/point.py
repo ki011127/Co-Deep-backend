@@ -45,6 +45,7 @@ class Point():
 
             based on the score : 
                 5: when the answers are somewhat consistent based on the story.
+                1~4: If your answer is sparse with details or comprehensive, give 1 to 4 points depending on the level.
                 0: Requesting hints, saying I don't know, answers that don't match the story.
         """
         self.messages = []

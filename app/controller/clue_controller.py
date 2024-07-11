@@ -9,10 +9,11 @@ class ClueController:
         if clue:
             clue['_id'] = str(clue['_id'])
         if clue:
-            if clue['name'].lower()==name.lower():
-                return {"result": "success", "clue": clue}
-            else:
-                return { "result": "wrong", "clue": clue}
+            names = clue['sub'].split(',')
+            for sub_name in names:
+                if sub_name.lower() == name.lower():
+                    return {"result": "success", "clue": clue}
+            return { "result": "wrong", "clue": clue}
         else:
             return clue
     

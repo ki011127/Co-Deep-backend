@@ -12,3 +12,8 @@ class UpdateStatRequest(BaseModel):
     name: str = Field(..., example="kitae", description="사용자 이름")
     level: int = Field(..., example=1, description="난이도")
     is_arrest: int = Field(..., example="1 or 0", description="검거 유무")
+
+class StoryRankRequest(BaseModel):
+    story_id: str = Field(..., example="667d499079e8f1760cd861f4", description="스토리 id")
+    name: str = Field(..., example="kitae", description="사용자 이름")
+    level: int = Field(..., example=1, description="난이도")

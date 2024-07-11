@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from controller.stat_controller import StatController
-from schema.stat_schema import StatCreateRequest, UpdateStatRequest
+from schema.stat_schema import StatCreateRequest, UpdateStatRequest, StoryRankRequest
 
 stat_controller = StatController()
 

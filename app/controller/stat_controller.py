@@ -7,14 +7,15 @@ import pytz
 class StatController:
     async def ep1_start(self, name):
         current_time = datetime.now(ZoneInfo("Asia/Seoul"))
-        result = await mongodb.db.stats.update_one(
-            {"name": name},
-            {
-                "$set": {"created_at": current_time},
-                "$setOnInsert": {"name":name, "clue_point":0, "detect_point":0, "detect_time":"00:00", "num_of_arrest": 0, "num_of_complete": 0}
-            },
-            upsert=True
-        )
+        result = await mongodb.db.stats.insert_one({
+            "name": name,
+            "created_at": current_time,
+            "clue_point": 0,
+            "detect_point": 0,
+            "detect_time": "00:00",
+            "num_of_arrest": 0,
+            "num_of_complete": 0
+        })
         return result
     
     async def update_stat(self, story_id, name, level, is_arrest):
@@ -32,7 +33,7 @@ class StatController:
             clue_point = sum(points)
         
 
-        user_doc = await mongodb.db.stats.find_one({"name": name})
+        user_doc = await mongodb.db.stats.find_one({"name": name},sort=[("created_at", -1)])
         if user_doc:
             # created_at과 현재 시간의 차이를 계산
             created_at = user_doc["created_at"]
@@ -60,20 +61,23 @@ class StatController:
             total_clue_point = existing_clue_point + clue_point
             # 문서 업데이트
             await mongodb.db.stats.update_one(
-                {"name": name},
+                {"_id": user_doc["_id"]},
                 {
                     "$set": {
-                        "clue_point": total_clue_point,
-                        "detect_point": total_detect_point,
+                        "clue_point": clue_point,
+                        "detect_point": detect_point,
                         "detect_time": formatted_time,
+                        "story_point": clue_point + detect_point,
                         "num_of_arrest": user_doc['num_of_arrest'] + int(is_arrest),
-                        "num_of_complete": user_doc['num_of_complete'] + 1
+                        "num_of_complete": user_doc['num_of_complete'] + 1,
+                        "story_id": story_id,
+                        "level": level
                     }
                 }
             )
         return user_doc
     
     async def get_stat(self, name):
-        user_doc = await mongodb.db.stats.find_one({"name": name})
+        user_doc = await mongodb.db.stats.find_one({"name": name},sort=[("created_at", -1)])
         user_doc['_id'] = str(user_doc['_id'])
         return user_doc
