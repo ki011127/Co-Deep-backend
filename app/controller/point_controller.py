@@ -10,7 +10,16 @@ class PointController:
     async def detect_point(self, story_id, name, level, question, input):
         point_model = Point()
         content = "q : " + question + "\na : " + input
-        res = point_model.point(content)
+        story_name = ""
+        if story_id == "667d499079e8f1760cd861f4":
+            story_name = "conan"
+        elif story_id == "667d49fc79e8f1760cd861f5":
+            story_name = "homes"
+        elif story_id == "668b713a05a0cdcccf4d9b7f":
+            story_name = "y"
+        elif story_id == "668b721c05a0cdcccf4d9b80":
+            story_name = "lady"
+        res = point_model.point(content, story_name)
         if res == "0":
             count = await mongodb.db.points.count_documents({"story_id": story_id,"level": level,"name": name,"point": 0, "is_detect":1})
             if count == 4:

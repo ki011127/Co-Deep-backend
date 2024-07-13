@@ -28,7 +28,7 @@ class DetectController:
             await mongodb.db.chattings.insert_one(document)
             result.append(document)
             print(result)
-            res = await detect_model.chatting(result)
+            res = await detect_model.chatting(result, story_id)
             document = {
                 "story_id": story_id,
                 "level": level,
@@ -40,7 +40,7 @@ class DetectController:
             }
         else:
             print("init")
-            res = await detect_model.init_model()
+            res = await detect_model.init_model(story_id)
             document = {
                 "story_id": story_id,
                 "level": level,

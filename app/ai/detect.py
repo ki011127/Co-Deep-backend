@@ -13,26 +13,8 @@ load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-class Detect():
-    def __init__(self):
-        self.client = OpenAI(api_key=OPENAI_API_KEY)
-        self.messages = []
-    
-    async def init_model(self):
-        self.make_prompt()
-        return self.detect()
-    
-    async def chatting(self, record):
-        self.make_prompt()
-        self.append_chat_record(record)
-        return self.detect()
-    
-    def make_prompt(self):
-        prompt = f"""
-            You are a detective and you need to complete the reasoning process by asking the user questions based on the crime method.
 
-            the method of committing a crime
-            The real killer was not Somei. Unlike Conan, a famous detective who starts off by implying the killer, this episode has a twist that the suspect who seemed to be the killer was not the real culprit. Both Conan and the police suspected Somei Shogo from the beginning, and he was the only suspect, and the true culprit was not even featured throughout the episode[3] and was not treated seriously.
+conan = """The real killer was not Somei. Unlike Conan, a famous detective who starts off by implying the killer, this episode has a twist that the suspect who seemed to be the killer was not the real culprit. Both Conan and the police suspected Somei Shogo from the beginning, and he was the only suspect, and the true culprit was not even featured throughout the episode[3] and was not treated seriously.
 
             The real culprit was Maiko Kuzumi. The reason it was nowhere to be seen in the scene was because he killed himself by throwing himself through a window immediately after the crime. The true criminal who was at the scene at the time of the crime escaped the scene by jumping through a window rather than through a door, and if the person who tried to hide something by fabricating evidence is a person separate from the criminal, a case that seemed like an impossible crime can be easily solved.
 
@@ -44,8 +26,49 @@ class Detect():
 
             It is Somei who manipulated the evidence by placing a coffee stand, but the reason why the coffee stand was placed later is important. Conan sees a strange mark under the stand and suspects that something is on this mark and hides it with a stand, but the key to this evidence manipulation was to hide that there was not only one Raisaku at the scene at the time of the crime, but the culprit was invited as a guest. Conan gets to the bottom of the cake on the plate by the smell of the coffee left in the pot and pencil holder cups, not by one piece. Originally, there were two plates of two cakes and two coffee cups on the table. Somei, who first burst into the scene, spilled the remaining coffee from the criminal's coffee cup, put the writing instrument in a pot, placed it on the desk side, disguised it as a pencil holder, and put the criminal's cake together with the victim's cake on one plate, disguised it to look like a single serving, and then laid the plate under the cup to look like a coffee stand. In other words, the coffee stand was not placed to hide something, but to hide that there was another person on the spot and to produce as if Raisaku was alone.
 
-            Then the question of where the fork was left remains, and Somei, who has been pretending that he is not the criminal until now, watches the whole situation and takes out the fork he hid in his jacket to reveal his crime. Conan, who already knows the truth, begins a reasoning by borrowing Kogoro's voice, saying that the criminal has fled to heaven.
+            Then the question of where the fork was left remains, and Somei, who has been pretending that he is not the criminal until now, watches the whole situation and takes out the fork he hid in his jacket to reveal his crime. Conan, who already knows the truth, begins a reasoning by borrowing Kogoro's voice, saying that the criminal has fled to heaven."""
 
+homes = """"""
+y = """"""
+lady = """"""
+
+
+class Detect():
+    def __init__(self):
+        self.client = OpenAI(api_key=OPENAI_API_KEY)
+        self.messages = []
+    
+    async def init_model(self, story_id):
+        if story_id == "667d499079e8f1760cd861f4":
+            story = conan
+        elif story_id == "667d49fc79e8f1760cd861f5":
+            story = homes
+        elif story_id == "668b713a05a0cdcccf4d9b7f":
+            story = y
+        elif story_id == "668b721c05a0cdcccf4d9b80":
+            story = lady
+        self.make_prompt(story)
+        return self.detect()
+    
+    async def chatting(self, record, story_id):
+        if story_id == "667d499079e8f1760cd861f4":
+            story = conan
+        elif story_id == "667d49fc79e8f1760cd861f5":
+            story = homes
+        elif story_id == "668b713a05a0cdcccf4d9b7f":
+            story = y
+        elif story_id == "668b721c05a0cdcccf4d9b80":
+            story = lady
+        self.make_prompt(story)
+        self.append_chat_record(record)
+        return self.detect()
+    
+    def make_prompt(self, story):
+        prompt = f"""
+            You are a detective and you need to complete the reasoning process by asking the user questions based on the crime method.
+            
+            the method of committing a crime:
+            {story}
 
             The overall order of questions is as follows. You must follow this order.
                 1. Ask the criminal
@@ -65,6 +88,7 @@ class Detect():
             There are a maximum of 7 questions about the method of committing the crime. (Excluding questions that give hints because user cannot be answered correctly.)
             When ending, print '-the end-' at the end.
         """
+        print(prompt)
         self.messages = []
         self.messages.append({"role": "system", "content": prompt})
     def detect(self):

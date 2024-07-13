@@ -1,0 +1,180 @@
+{
+    "case_development": [
+      {
+        "incident": 1,
+        "location": "221B Baker Street",
+        "description": "Helen Stoner visits Sherlock Holmes and Dr. Watson early in the morning. She seeks help to investigate her twin sister Julia's mysterious death two years ago. Helen fears her violent stepfather, Dr. Grimsby Roylott.",
+        "evidence": [
+          {
+            "type": "Helen's Testimony",
+            "description": "Detailed account of Julia's death and the strange occurrences in her own room.",
+            "importance": 5
+          }
+        ]
+      },
+      {
+        "incident": 2,
+        "location": "221B Baker Street",
+        "description": "Shortly after Helen leaves, Dr. Grimsby Roylott arrives at Holmes' office. He threatens Holmes and Watson, demonstrating his strength by bending a fireplace poker, warning them to stay out of his affairs.",
+        "evidence": [
+          {
+            "type": "Bent Poker",
+            "description": "Demonstrates Roylott's violent nature and physical strength.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "incident": 3,
+        "location": "Stoke Moran",
+        "description": "Holmes and Watson travel to Stoke Moran to investigate. They stop by the registry office to learn about the Stoner family's financial situation and discover that Roylott has a motive to prevent Helen and Julia from marrying.",
+        "evidence": [
+          {
+            "type": "financial situation",
+            "description": "Indicating Roylott's financial motive.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "incident": 4,
+        "location": "Julia's Room, Stoke Moran",
+        "description": "Holmes and Watson examine Julia’s room, now occupied by Helen. They find a ventilator connecting to Dr. Roylott's room, a bell pull that doesn’t function, and a bed fixed to the floor.",
+        "evidence": [
+          {
+            "type": "Ventilator and Bell Pull",
+            "description": "Connecting Helen's and Roylott's rooms.",
+            "importance": 4
+          },
+          {
+            "type": "Fixed Bed",
+            "description": "Suggesting the bed's position is crucial for the crime.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "incident": 5,
+        "location": "Dr. Roylott's Room, Stoke Moran",
+        "description": "Holmes and Watson examine Dr. Roylott’s room. They find a large safe, a saucer of milk, and a leash-like object.",
+        "evidence": [
+          {
+            "type": "Safe and Saucer of Milk",
+            "description": "Indicating the presence of an animal.",
+            "importance": 4
+          },
+          {
+            "type": "Leash-like Object",
+            "description": "Suggesting control over the animal.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "incident": 6,
+        "location": "Julia's Room, Stoke Moran",
+        "description": "Holmes and Watson wait in Julia's room at night. They hear a low whistle, and Holmes strikes the bell pull with a cane. A metallic sound follows from Dr. Roylott’s room.",
+        "evidence": [
+          {
+            "type": "Whistle and Metallic Sound",
+            "description": "Indicating the snake’s summoning and retrieval.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "incident": 7,
+        "location": "Dr. Roylott's Room, Stoke Moran",
+        "description": "The snake, enraged by Holmes’ attack, returns to Dr. Roylott and bites him. Roylott dies instantly from the venom.",
+        "evidence": [
+          {
+            "type": "Dr. Roylott's Body",
+            "description": "Found with snake bite marks.",
+            "importance": 5
+          }
+        ]
+      },
+      {
+        "incident": 8,
+        "location": "221B Baker Street",
+        "description": "Holmes explains the case to Watson. He reveals how Dr. Roylott trained the snake to kill Julia and attempted the same with Helen. The motive was to retain control of the inheritance.",
+        "evidence": [
+          {
+            "type": "Holmes' Explanation",
+            "description": "Clarifies the method and motive of the crime.",
+            "importance": 5
+          }
+        ]
+      }
+    ],
+    "suspects": [
+      {
+        "name": "Helen Stoner",
+        "alibi": "Present at Holmes' office and later at Stoke Moran.",
+        "motive": "Fear of her stepfather and concern over her sister's death.",
+        "evidence": [
+          {
+            "type": "Helen's Testimony",
+            "description": "Describing the strange events and her stepfather’s behavior.",
+            "importance": 5
+          }
+        ]
+      },
+      {
+        "name": "Dr. Grimsby Roylott",
+        "alibi": "None (culprit).",
+        "motive": "Preventing his stepdaughters from marrying to retain their inheritance.",
+        "evidence": [
+          {
+            "type": "Snake and Milk Saucer",
+            "description": "Indicating his method of murder.",
+            "importance": 5
+          },
+          {
+            "type": "Bent Poker",
+            "description": "Demonstrating his violent nature.",
+            "importance": 4
+          }
+        ]
+      }
+    ],
+    "crime_tricks": [
+      {
+        "crime": "Murder of Julia Stoner",
+        "method": "Dr. Roylott used a venomous snake to kill Julia. The snake was sent through a vent and retrieved using a whistle. The setup in Helen’s room was intended to repeat the crime.",
+        "motive": "Roylott aimed to prevent his stepdaughters from marrying to maintain control of their inheritance.",
+        "evidence": [
+          {
+            "type": "Vent and Bell Pull",
+            "description": "Indicating the snake’s route.",
+            "importance": 4
+          },
+          {
+            "type": "Saucer of Milk",
+            "description": "Used to attract the snake.",
+            "importance": 4
+          },
+          {
+            "type": "Safe",
+            "description": "Where the snake was kept.",
+            "importance": 3
+          },
+          {
+            "type": "Whistle",
+            "description": "Used to summon the snake back.",
+            "importance": 3
+          }
+        ]
+      }
+    ],
+    "culprit": {
+      "name": "Dr. Grimsby Roylott",
+      "age": "Not specified",
+      "occupation": "Former doctor",
+      "motive": "Prevent stepdaughters from marrying to retain their inheritance.",
+      "crimes": [
+        "Murder of Julia Stoner"
+      ]
+    }
+  }
+  
