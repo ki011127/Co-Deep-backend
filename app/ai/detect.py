@@ -28,7 +28,16 @@ conan = """The real killer was not Somei. Unlike Conan, a famous detective who s
 
             Then the question of where the fork was left remains, and Somei, who has been pretending that he is not the criminal until now, watches the whole situation and takes out the fork he hid in his jacket to reveal his crime. Conan, who already knows the truth, begins a reasoning by borrowing Kogoro's voice, saying that the criminal has fled to heaven."""
 
-homes = """"""
+homes = """Holmes stopped by the registry office to investigate the Stoner family's situation before heading to Stoke Moran. The investigation discovered that the Stoner sisters' mother left a legacy, but if the sisters married, Dr. Grimsby Roylott would not be able to receive a penny. In other words, Dr. Grimsby Roylott had enough motivation to harm the sisters. Then I met Helen at Stoke Moran. Holmes told Helen that he had met Dr. Grimsby Roylott, and Helen finally found out that she had been followed.
+
+            Holmes made a few strange discoveries when he looked around the scene of the incident. On the wall of Julia's room that Helen is currently using, there was a hole that connects to the next room. It was Dr. Grimsby Roylott's room. Grimsby Roylott was such a cocoon that he enjoyed strong cigars, which is why Julia smelled them every day. And the bigger question was the strange row next to the hole. Helen testified that she knew that the row was used by a doorbell and was connected to the housekeeper's room, but her sister had never used it. However, Holmes pulled the rope and made no sound. It turned out that the rope was just hanging from a hook on the wall. What is this rope for? Also, the bed was fixed so that it could not move.
+
+            Then, when I entered Dr. Grimsby Roylott's room next door, I noticed a large safe. Then I saw a plate of milk. Holmes replied that Helen wouldn't have a cat when the doctor asked Helen if she had a cat. Other than that, I saw a whip with a hook. Holmes learned the truth of the incident from these facts.
+            
+            The culprit was Dr. Roylott. He was living off the pension that came from his wife's inheritance, but if any of the daughters were married and the pension was passed on to them, life would be difficult. So when Julia married, she sent an Indian viper into a vent that led between the rooms, and Julia was bitten by a viper and killed. When Julia died, the whistle was the sound of the doctor trying to deal with the snake, and the sound of the metal was the sound of the safe where the snake was kept. Julia's statement before she died as "a zebra" was a misunderstanding of the spotted snake as a string in the dark.
+
+            At first, Holmes suspected that Julia might have seen the Gypsies' towels before she died and said, "Specked band," but when he actually looked into the room and felt the suspicion, he thought of the snake and guessed how to commit the crime.
+"""
 y = """"""
 lady = """"""
 
