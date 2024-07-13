@@ -1,0 +1,77 @@
+{
+    "episodes": [
+      {
+        "episode": 1,
+        "title": "The Visit to Sherlock Holmes",
+        "description": "Helen Stoner visits Sherlock Holmes and Dr. Watson early in the morning. She seeks help to investigate her twin sister Julia's mysterious death two years ago. Helen fears her stepfather, Dr. Grimsby Roylott, who is very strong and sometimes scary. Helen explains that Julia had gotten engaged and started hearing a low whistle at night. One night, Julia screamed, ran to Helen's room, collapsed, and said the words 'stained string' before she died. Now, Helen hears the same whistle at night in Julia's old room.",
+        "evidence_collected":[
+            {
+                "type": "Testimony",
+                "description": "Detailed account of Julia's death and strange occurrences in her own room.",
+                "importance": 5
+            }
+        ]
+      },
+      {
+        "episode": 2,
+        "title": "Discovering Motives",
+        "description": "Holmes and Watson travel to Stoke Moran to investigate further. They learn about the Stoner family's financial situation and discover that Dr. Roylott has a reason to prevent Helen and Julia from marrying because he wants to keep their inheritance for himself.",
+        "evidence_collected": [
+          {
+            "type": "Financial Situation",
+            "description": "Indicating Roylott's financial motive.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 3,
+        "title": "Strange Findings in Julia's Room",
+        "description": "Holmes and Watson examine Julia's room, now occupied by Helen. They find a vent connecting to Dr. Roylott's room, a bell pull that doesn't work, and a bed fixed to the floor.",
+        "evidence_collected": [
+          {
+            "type": "Vent",
+            "description": "Connecting Helen's and Roylott's rooms.",
+            "importance": 4
+          },
+          {
+            "type": "Bell Pull",
+            "description": "Non-functional but strategically placed.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 4,
+        "title": "The Final Clue",
+        "description": "Holmes and Watson wait in Julia's room at night. They hear a low whistle, and Holmes strikes the bell pull with a cane. Suddenly, they hear a metallic sound from Dr. Roylott's room. The snake, enraged by Holmes' action, returns to Dr. Roylott and bites him. Roylott dies instantly from the venom.",
+        "evidence_collected":[
+            {
+                "type": "Whistle",
+                "description": "Indicating the snake's summoning and retrieval.",
+                "importance": 4
+            },
+            {
+              "type": "Metallic Sound",
+              "description": "Indicating the snake's summoning and retrieval.",
+              "importance": 2
+          }
+        ]
+      },
+      {
+        "episode": 5,
+        "title": "The Final Explanation",
+        "description": "Back at 221B Baker Street, Holmes explains everything to Watson. He reveals how Dr. Roylott trained a snake to kill Julia and tried the same with Helen. His motive was to keep control of the inheritance."
+      }
+    ],
+    "culprit_details": {
+      "name": "Dr. Grimsby Roylott",
+      "age": 0,
+      "occupation": "Former doctor",
+      "motive": "Prevent stepdaughters from marrying to retain their inheritance",
+      "crimes": [
+        "Murder of Julia Stoner"
+      ]
+    }
+  }
+    

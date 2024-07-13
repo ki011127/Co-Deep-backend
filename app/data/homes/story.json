@@ -3,7 +3,7 @@
       {
         "incident": 1,
         "location": "221B Baker Street",
-        "description": "Helen Stoner visits Sherlock Holmes and Dr. Watson early in the morning. She seeks help to investigate her twin sister Julia's mysterious death two years ago. Helen fears her violent stepfather, Dr. Grimsby Roylott.",
+        "description": "Helen Stoner visits Sherlock Holmes and Dr. Watson early in the morning. She seeks help to investigate her twin sister Julia's mysterious death two years ago. Helen fears her violent stepfather, Dr. Grimsby Roylott. Helen provides a detailed testimony about her sister's death, explaining that Julia had gotten engaged and started hearing a low whistle and a crackling sound at night. One night, Julia screamed, ran to Helen's room, collapsed, and died after saying the word 'stained string'. Helen mentions the repair of her own room forcing her to move into Julia's old room, where she now hears the same whistle at night. Helen also describes the violent and unstable nature of her stepfather.",
         "evidence": [
           {
             "type": "Helen's Testimony",
@@ -39,27 +39,27 @@
       {
         "incident": 4,
         "location": "Julia's Room, Stoke Moran",
-        "description": "Holmes and Watson examine Julia’s room, now occupied by Helen. They find a ventilator connecting to Dr. Roylott's room, a bell pull that doesn’t function, and a bed fixed to the floor.",
+        "description": "Holmes and Watson examine Julia's room, now occupied by Helen. They find a vent connecting to Dr. Roylott's room, a bell pull that doesn't function, and a bed fixed to the floor.",
         "evidence": [
           {
-            "type": "Ventilator and Bell Pull",
+            "type": "Vent",
             "description": "Connecting Helen's and Roylott's rooms.",
             "importance": 4
           },
           {
-            "type": "Fixed Bed",
-            "description": "Suggesting the bed's position is crucial for the crime.",
-            "importance": 3
+            "type": "bell pull",
+            "description": "Connecting Helen's and Roylott's rooms.",
+            "importance": 4
           }
         ]
       },
       {
         "incident": 5,
         "location": "Dr. Roylott's Room, Stoke Moran",
-        "description": "Holmes and Watson examine Dr. Roylott’s room. They find a large safe, a saucer of milk, and a leash-like object.",
+        "description": "Holmes and Watson examine Dr. Roylotts room. They find a large safe, a saucer of milk, and a leash-like object.",
         "evidence": [
           {
-            "type": "Safe and Saucer of Milk",
+            "type": "Saucer of Milk",
             "description": "Indicating the presence of an animal.",
             "importance": 4
           },
@@ -73,7 +73,7 @@
       {
         "incident": 6,
         "location": "Julia's Room, Stoke Moran",
-        "description": "Holmes and Watson wait in Julia's room at night. They hear a low whistle, and Holmes strikes the bell pull with a cane. A metallic sound follows from Dr. Roylott’s room.",
+        "description": "Holmes and Watson wait in Julia's room at night. They hear a low whistle, and Holmes strikes the bell pull with a cane. A metallic sound follows from Dr. Roylott's room. The snake, enraged by Holmes attack, returns to Dr. Roylott and bites him. Roylott dies instantly from the venom.",
         "evidence": [
           {
             "type": "Whistle and Metallic Sound",
@@ -84,18 +84,6 @@
       },
       {
         "incident": 7,
-        "location": "Dr. Roylott's Room, Stoke Moran",
-        "description": "The snake, enraged by Holmes’ attack, returns to Dr. Roylott and bites him. Roylott dies instantly from the venom.",
-        "evidence": [
-          {
-            "type": "Dr. Roylott's Body",
-            "description": "Found with snake bite marks.",
-            "importance": 5
-          }
-        ]
-      },
-      {
-        "incident": 8,
         "location": "221B Baker Street",
         "description": "Holmes explains the case to Watson. He reveals how Dr. Roylott trained the snake to kill Julia and attempted the same with Helen. The motive was to retain control of the inheritance.",
         "evidence": [
@@ -129,11 +117,6 @@
             "type": "Snake and Milk Saucer",
             "description": "Indicating his method of murder.",
             "importance": 5
-          },
-          {
-            "type": "Bent Poker",
-            "description": "Demonstrating his violent nature.",
-            "importance": 4
           }
         ]
       }
@@ -141,7 +124,7 @@
     "crime_tricks": [
       {
         "crime": "Murder of Julia Stoner",
-        "method": "Dr. Roylott used a venomous snake to kill Julia. The snake was sent through a vent and retrieved using a whistle. The setup in Helen’s room was intended to repeat the crime.",
+        "method": "Dr. Roylott used a venomous snake to kill Julia. The snake was sent through a vent and retrieved using a whistle. The setup in Helen's room was intended to repeat the crime.",
         "motive": "Roylott aimed to prevent his stepdaughters from marrying to maintain control of their inheritance.",
         "evidence": [
           {

@@ -1,0 +1,99 @@
+{
+    "episodes": [
+      {
+        "episode": 1,
+        "title": "The Visit at 221B Baker Street",
+        "description": "Helen Stoner arrives early in the morning at Sherlock Holmes' office, visibly distressed. She recounts the mysterious circumstances surrounding her twin sister Julia's death two years ago. Julia had recently gotten engaged and began hearing a low whistle and a crackling sound at night. One fateful night, she screamed, ran to Helen's room, collapsed, and died after uttering the words 'stained string'. Helen now fears for her own life as she hears the same eerie sounds in Julia's old room, where she has been forced to move due to repairs in her own room. She also describes her violent and unstable stepfather, Dr. Grimsby Roylott.",
+        "evidence_collected":[
+            {
+                "type": "Testimony",
+                "description": "Detailed account of Julia's death and strange occurrences in her own room.",
+                "importance": 5
+            }
+        ]
+      },
+      {
+        "episode": 2,
+        "title": "A Threatening Encounter",
+        "description": "Shortly after Helen leaves, Dr. Grimsby Roylott storms into Holmes' office. He threatens Holmes and Watson, demonstrating his immense strength by bending a fireplace poker with his bare hands. He warns them to stay out of his affairs or face dire consequences."
+      },
+      {
+        "episode": 3,
+        "title": "Financial Motives Uncovered",
+        "description": "Holmes and Watson travel to Stoke Moran to investigate further. They stop by the registry office to learn about the Stoner family's financial situation. It becomes clear that Dr. Roylott has a significant motive to prevent Helen and Julia from marrying—he stands to lose control over their inheritance if they do.",
+        "evidence_collected": [
+          {
+            "type": "Financial Situation",
+            "description": "Indicating Roylott's financial motive.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 4,
+        "title": "Clues in Julia's Room",
+        "description": "At Stoke Moran, Holmes and Watson examine Julia's former room, now occupied by Helen. They discover several peculiarities: a vent connecting to Dr. Roylott's room, a bell pull that doesn't function, and a bed fixed to the floor.",
+        "evidence_collected": [
+          {
+            "type": "Vent",
+            "description": "Connecting Helen's and Roylott's rooms.",
+            "importance": 4
+          },
+          {
+            "type": "Bell Pull",
+            "description": "Non-functional but strategically placed.",
+            "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 5,
+        "title": "Strange Findings in Dr. Roylott's Room",
+        "description": "Holmes and Watson then scrutinize Dr. Roylott’s room. They find a large safe, a saucer of milk, and a leash-like object—all suggesting the presence of an animal.",
+        "evidence_collected": [
+          {
+            "type": "Saucer of Milk",
+            "description": "Indicating the presence of an animal.",
+            "importance": 4
+          },
+          {
+            "type": "Leash-like Object",
+            "description": "Suggesting control over the animal.",
+            "importance": 3
+          }
+        ]
+      },
+      {
+        "episode": 6,
+        "title": "The Deadly Night",
+        "description": "Holmes and Watson wait in Julia's room at night. They hear the low whistle that Helen described. Holmes strikes the bell pull with his cane, prompting a metallic sound from Dr. Roylott’s room. Suddenly, a snake emerges from the vent but is enraged by Holmes' attack on it. The snake retreats back through the vent and bites Dr. Roylott, who dies instantly from its venom.",
+        "evidence_collected":[
+            {
+                "type": "Whistle",
+                "description": "Indicating the snake’s summoning and retrieval.",
+                "importance": 4
+            },
+            {
+              "type": "Metallic Sound",
+              "description": "Indicating the snake’s summoning and retrieval.",
+              "importance": 4
+          }
+        ]
+      },
+      {
+        "episode": 7,
+        "title": "The Final Explanation",
+        "description": "Back at 221B Baker Street, Holmes explains the case to Watson. He reveals how Dr. Roylott trained a venomous snake to kill Julia and attempted the same with Helen to retain control over their inheritance."
+      }
+    ],
+    "culprit_details": {
+      "name": "Dr. Grimsby Roylott",
+      "age": 0,
+      "occupation": "Former doctor",
+      "motive": "Prevent stepdaughters from marrying to retain their inheritance",
+      "crimes": [
+        "Murder of Julia Stoner"
+      ]
+    }
+  }
+    

@@ -38,7 +38,7 @@ class Episode():
         
     def make_episode(self, age):
         ## Co-Deep-backend 에서 실행할 때는 아래의 경로를 사용
-        self.read_file("app/data/conan/story3.json")
+        self.read_file("app/data/homes/story.json")
         
         prompt = f"""
             You are a model that makes episodes based on the basic story.
@@ -64,9 +64,9 @@ class Episode():
             The priorities to consider are the length of episode 1, number of clues 2, and risk consideration for number 3.
             I don't want you to use all the case development story. Just pick some important parts and make it into an episode.
             The episode difference by age group(Most important part!!)
-                1. level 1: 4~5 episodes, intuitive, important, criminal evidence, importance of 4 points or higher evidence, light and fun materials, no cruel or dangerous materials
-                2. level 2: 6~7 episodes, confusing and hard-to-find evidence, importance of 2 points or higher evidence, a story based on the original story, cruel and dangerous material is not direct, but indirectly labeled
-                3. level 3: 7~9 episodes, more confusing and hard-to-find, importance of 1 points or higher evidence, difficult evidence, a story based on the original story, cruel and dangerous materials is allowed
+                1. age 10~13: 4~5 episodes, intuitive, important, criminal evidence, importance of 4 points or higher evidence, light and fun materials, no cruel or dangerous materials
+                2. age 14~16: 6~7 episodes, confusing and hard-to-find evidence, importance of 2 points or higher evidence, a story based on the original story, cruel and dangerous material is not direct, but indirectly labeled
+                3. age 17~19: 7~9 episodes, more confusing and hard-to-find, importance of 1 points or higher evidence, difficult evidence, a story based on the original story, cruel and dangerous materials is allowed
             You must answer in English.
             User's age: {age}
             
@@ -171,5 +171,5 @@ class Episode():
     
 if __name__ == "__main__":
     episode = Episode()
-    print(episode.make_episode(19))
+    print(episode.make_episode(14))
     
