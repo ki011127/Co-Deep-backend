@@ -12,16 +12,16 @@ router = APIRouter(
 @router.post("/story_rank",\
     description="스토리 랭킹")
 async def story_rank(stat: StoryRankRequest):
-    rank = await rank_controller.story_rank(stat.story_id, stat.level)
+    rank = await rank_controller.story_rank(stat.story_id, stat.name,stat.level)
     if rank:
         return { "result": "success", "rank": rank}
     else:
         return { "result": "fail" }
     
-@router.get("/total_rank",\
+@router.get("/total_rank/{name}",\
     description="총합 점수 랭킹")
-async def total_rank():
-    rank = await rank_controller.total_rank()
+async def total_rank(name):
+    rank = await rank_controller.total_rank(name)
     if rank:
         return { "result": "success", "rank": rank}
     else:
